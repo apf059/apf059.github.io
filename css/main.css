@@ -1,0 +1,127 @@
+@import "ui.css";
+/* CSS Document */
+/* CSS Document */
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script&family=Muli&family=Noto+Serif+TC:wght@700&family=Playfair+Display:wght@700&display=swap");
+.profile figure, .cover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile figure figcaption p.quote:before, .cover:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.cover {
+  position: relative;
+  height: 100vh;
+  box-sizing: border-box;
+  border: 1rem solid #FFFFFF;
+}
+@media (max-width: 480px) {
+  .cover {
+    border: none;
+    padding: 0 1rem;
+  }
+}
+.cover:before {
+  width: 100%;
+  background: url(../images/cover.jpg) center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 0.26;
+}
+.cover .coverContent {
+  z-index: 1;
+  text-align: center;
+}
+.cover .coverContent h1 {
+  font-family: Playfair Display;
+  margin-bottom: 1rem;
+}
+.cover .coverContent p {
+  margin: 1rem 0;
+}
+.cover .btn {
+  position: absolute;
+  bottom: 20px;
+}
+.cover .btn.icon img {
+  width: 12px;
+}
+.cover .btn:hover {
+  background-color: #FFFFFF;
+  transition: all 1s ease-out;
+}
+.cover .btn:hover img {
+  transform: scale(1.5);
+  transition: inherit;
+}
+
+.profile {
+  padding: 40px 0;
+}
+@media (max-width: 680px) {
+  .profile figure {
+    flex-direction: column;
+  }
+}
+.profile figure figcaption {
+  margin: 0 20px;
+}
+@media (min-width: 680px) {
+  .profile figure figcaption {
+    width: 35%;
+    margin: 0 50px;
+  }
+}
+.profile figure figcaption h2 {
+  font-family: Playfair Display;
+}
+@media (min-width: 680px) {
+  .profile figure figcaption h2 {
+    margin-top: 0;
+  }
+}
+.profile figure figcaption h2 span {
+  font-family: Noto Serif TC;
+  letter-spacing: 2.2px;
+  padding-left: 15px;
+  margin-left: 7px;
+  border-left: thin solid rgba(0, 0, 0, 0.6);
+}
+.profile figure figcaption p.quote {
+  font-family: Oleo Script;
+  margin-top: 4rem;
+  position: relative;
+  padding-left: 42px;
+  color: rgba(0, 0, 0, 0.23);
+}
+@media (max-width: 480px) {
+  .profile figure figcaption p.quote {
+    margin-top: 15px;
+    padding-left: 25px;
+  }
+}
+.profile figure figcaption p.quote:before {
+  width: 28px;
+  height: 28px;
+  background: url(../images/left_quote.svg) top no-repeat;
+  top: -5px;
+  filter: grayscale(1) opacity(0.5);
+}
+@media (max-width: 480px) {
+  .profile figure figcaption p.quote:before {
+    width: 16px;
+    height: 16px;
+    top: -3px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

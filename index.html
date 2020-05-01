@@ -1,0 +1,51 @@
+
+<!doctype html>
+<html lang="zh-Hant-Tw">
+<head>
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="images/logo/favicon-likestore.ico" type="image/png">
+<title>Jessica Wu</title>
+	
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/animate.css">
+<style>
+</style>
+</head>
+
+<body>	
+	<div class="cover">	
+		<div class="coverContent">						
+			<h1 class="animated wow fadeIn" data-wow-duration="1.0s" data-wow-delay=".2s">jessica wu</h1>
+			<p class="f-18 animated wow fadeInDown" data-wow-duration="1.0s" data-wow-delay=".4s">Living in the present & deep thinking.</p>
+			<p class="f-18 jobTitle animated wow fadeInDown" data-wow-duration="1.1s" data-wow-delay=".6s">Web UI / UX Designer</p>
+		</div>
+		<div class="btn icon icon-outline animated wow fadeInDown" id="menu01" data-wow-duration="1.1s" data-wow-delay=".8s">
+			<img src="images/down_arrow.svg">
+		</div>
+	</div>
+	<div class="profile" id="profile">
+		<figure>
+			<img src="images/jessica01.jpg">
+			<figcaption>
+				<h2 class="f-40">jessica wu <span class="f-32">吳姿嬋</span></h2>
+				<p class="info f-18">Hi, I'm a designer form the Taiwan. I have a hardwired desire to be better, an instinct for good design.</p>
+				<p class="quote f-32">Put yourself in others' shoes for a different viewpoint.</p>
+			</figcaption>
+		</figure>
+
+	</div>	
+
+<script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="js/wow.js"></script>
+<script>
+	$(document).ready(function(){
+	    $(function(){ $('#menu01').click(function(){ 
+	        $('html,body').animate({scrollTop:$('#profile').offset().top}, 700);});  
+	    }); 
+	}); 
+
+	new WOW().init();
+</script>	
+
+</body>
+</html>

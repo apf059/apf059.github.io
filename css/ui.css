@@ -1,0 +1,151 @@
+@charset "UTF-8";
+/* CSS Document */
+/* CSS Document */
+.btn.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body, html, figure, p {
+  margin: 0;
+}
+
+body, html {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: Muli;
+}
+
+img {
+  max-width: 100%;
+}
+
+.btn {
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.btn:focus {
+  outline: none;
+}
+.btn.icon {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.btn.icon.icon-outline {
+  background-color: transparent;
+  border: thin solid rgba(0, 0, 0, 0.8);
+}
+
+/*BEGIN font-size*/
+h1 {
+  font-size: 4.3rem;
+}
+
+.f-40 {
+  font-size: 2.5rem;
+}
+
+.f-32 {
+  font-size: 2rem;
+}
+
+.f-30 {
+  font-size: 1.875rem;
+}
+
+.f-25 {
+  font-size: 1.45rem;
+}
+
+.f-20 {
+  font-size: 1.25rem;
+}
+
+.f-19 {
+  font-size: 1.187rem;
+}
+
+.f-18 {
+  font-size: 1.125rem;
+}
+
+.f-17 {
+  font-size: 1.062rem;
+}
+
+.f-16 {
+  font-size: 1rem;
+}
+
+.f-15 {
+  font-size: 0.935rem;
+}
+
+.f-14 {
+  font-size: 0.875rem;
+}
+
+.f-13 {
+  font-size: 0.812rem;
+}
+
+.f-12 {
+  font-size: 0.75rem;
+}
+
+/*BEGIN max-width:480px Vmin 手機版文字大小*/
+@media (max-width: 480px) {
+  h1 {
+    font-size: 10.5vmin;
+  }
+
+  .f-40 {
+    font-size: 8.5vmin;
+  }
+
+  .f-32 {
+    font-size: 7vmin;
+  }
+
+  .f-30 {
+    font-size: 6.8vmin;
+  }
+
+  .f-20, .f-25 {
+    font-size: 5.8vmin;
+  }
+
+  .f-19 {
+    font-size: 5.7vmin;
+  }
+
+  .f-18 {
+    font-size: 5.6vmin;
+  }
+
+  .f-17 {
+    font-size: 5.3vmin;
+  }
+
+  .f-16 {
+    font-size: 5vmin;
+  }
+
+  .f-15 {
+    font-size: 4.7vmin;
+  }
+
+  .f-14 {
+    font-size: 4.3vmin;
+  }
+
+  .f-13, .f-12 {
+    font-size: 4vmin;
+  }
+}
+/*END font-size*/
+
+/*# sourceMappingURL=ui.css.map */
