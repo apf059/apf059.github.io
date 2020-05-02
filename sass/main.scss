@@ -36,18 +36,8 @@
 	.btn {
 		position: absolute;
 		bottom: 20px;
-		&.icon {
-			img {
-				width: 12px;
-			}
-		}
-		&:hover {
-			background-color: $white;
-			transition: all 1s ease-out;
-			img {
-				transform: scale(1.5);
-				transition: inherit;
-			}
+		img {
+			width: 12px;
 		}
 	}
 }
@@ -83,19 +73,19 @@
 			p {
 				&.quote {
 					font-family: Oleo Script;
-					margin-top: 4rem;
+					margin: 4rem 0 4.5rem;
 					position: relative;
 					padding-left: 42px;
-					color: rgba($black, .23);
+					color: $light-gray;
 					@media (max-width: 480px) {
-						margin-top: 15px;
+						margin: 15px 0;
 						padding-left: 25px;
 					}
 					&:before {
 						@extend %pseudo-element;
 						width: 28px;
 						height: 28px;
-						background: url(../images/left_quote.svg) top no-repeat;
+						background: url(../images/icons/left_quote.svg) top no-repeat;
 						top: -5px;
 						filter: grayscale(1) opacity(0.5);
 						@media (max-width: 480px) {
@@ -105,13 +95,12 @@
 						}
 					}
 				}
-				&.info {
-					// background-color: $black;
-					// color: $white;
-					// border-top: thick solid rgba($black, .1);
-					// padding: 1rem;
-					// margin-top: 1rem;
-				}
+			}
+			.btnGroup {
+				@extend %d-flex-center;
+				justify-content: space-between;
+				border-top: thin solid $light-gray;
+				padding-top: 1rem;
 			}
 		}
 	}	

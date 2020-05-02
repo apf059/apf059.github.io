@@ -1,12 +1,6 @@
 @charset "UTF-8";
 /* CSS Document */
 /* CSS Document */
-.btn.icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 body, html, figure, p {
   margin: 0;
 }
@@ -24,7 +18,11 @@ img {
 .btn {
   border: none;
   cursor: pointer;
+  background-color: #000000;
+  color: #FFFFFF;
   border-radius: 4px;
+  font-family: Muli;
+  letter-spacing: 2px;
 }
 .btn:focus {
   outline: none;
@@ -33,10 +31,35 @@ img {
   border-radius: 50%;
   width: 40px;
   height: 40px;
+  line-height: 40px;
 }
 .btn.icon.icon-outline {
   background-color: transparent;
   border: thin solid rgba(0, 0, 0, 0.8);
+}
+.btn.icon img {
+  width: 15px;
+}
+.btn.icon:hover {
+  background-color: #FFFFFF;
+  transition: all 1s ease-out;
+}
+.btn.icon:hover img {
+  transform: scale(1.5);
+  transition: inherit;
+}
+.btn.icon.icon-sm {
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+}
+.btn.btn-primary {
+  padding: 8px 22px;
+}
+.btn:hover span {
+  display: inline-block;
+  transform: scale(1.2);
+  transition: all 1s ease-out;
 }
 
 /*BEGIN font-size*/
@@ -70,6 +93,7 @@ h1 {
 
 .f-18 {
   font-size: 1.125rem;
+  line-height: 2rem;
 }
 
 .f-17 {
@@ -96,8 +120,8 @@ h1 {
   font-size: 0.75rem;
 }
 
-/*BEGIN max-width:480px Vmin 手機版文字大小*/
-@media (max-width: 480px) {
+/*BEGIN max-width:680px Vmin 手機版文字大小*/
+@media (max-width: 680px) {
   h1 {
     font-size: 10.5vmin;
   }
@@ -124,6 +148,7 @@ h1 {
 
   .f-18 {
     font-size: 5.6vmin;
+    line-height: 7.5vmin;
   }
 
   .f-17 {

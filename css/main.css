@@ -2,7 +2,7 @@
 /* CSS Document */
 /* CSS Document */
 @import url("https://fonts.googleapis.com/css2?family=Oleo+Script&family=Muli&family=Noto+Serif+TC:wght@700&family=Playfair+Display:wght@700&display=swap");
-.profile figure, .cover {
+.profile figure figcaption .btnGroup, .profile figure, .cover {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -52,16 +52,8 @@
   position: absolute;
   bottom: 20px;
 }
-.cover .btn.icon img {
+.cover .btn img {
   width: 12px;
-}
-.cover .btn:hover {
-  background-color: #FFFFFF;
-  transition: all 1s ease-out;
-}
-.cover .btn:hover img {
-  transform: scale(1.5);
-  transition: inherit;
 }
 
 .profile {
@@ -98,21 +90,21 @@
 }
 .profile figure figcaption p.quote {
   font-family: Oleo Script;
-  margin-top: 4rem;
+  margin: 4rem 0 4.5rem;
   position: relative;
   padding-left: 42px;
   color: rgba(0, 0, 0, 0.23);
 }
 @media (max-width: 480px) {
   .profile figure figcaption p.quote {
-    margin-top: 15px;
+    margin: 15px 0;
     padding-left: 25px;
   }
 }
 .profile figure figcaption p.quote:before {
   width: 28px;
   height: 28px;
-  background: url(../images/left_quote.svg) top no-repeat;
+  background: url(../images/icons/left_quote.svg) top no-repeat;
   top: -5px;
   filter: grayscale(1) opacity(0.5);
 }
@@ -122,6 +114,11 @@
     height: 16px;
     top: -3px;
   }
+}
+.profile figure figcaption .btnGroup {
+  justify-content: space-between;
+  border-top: thin solid rgba(0, 0, 0, 0.23);
+  padding-top: 1rem;
 }
 
 /*# sourceMappingURL=main.css.map */

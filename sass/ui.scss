@@ -17,7 +17,11 @@ img {
 .btn {
 	border: none;
 	cursor: pointer;
+	background-color: $black;
+	color: $white;
 	border-radius: 4px;
+	font-family: Muli;
+	letter-spacing: 2px;
 	&:focus {
 		outline: none;
 	}
@@ -25,10 +29,36 @@ img {
 		border-radius: 50%;
 		width: 40px;
 		height: 40px;
-		@extend %d-flex-center;
+		line-height: 40px;
 		&.icon-outline {
 			background-color: transparent;
 			border: thin solid rgba($black, .8);
+		}
+		img {
+			width: 15px;
+		}
+		&:hover {
+			background-color: $white;
+			transition: all 1s ease-out;
+			img {
+				transform: scale(1.5);
+				transition: inherit;
+			}
+		}
+		&.icon-sm {
+			width: 35px;
+			height: 35px;
+			line-height: 35px;
+		}
+	}
+	&.btn-primary {
+		padding: 8px 22px;
+	}
+	&:hover {
+		span {
+			display: inline-block;
+			transform: scale(1.2);
+			transition: all 1s ease-out;
 		}
 	}
 }
@@ -41,7 +71,10 @@ h1{font-size:4.3rem;}
 .f-25{font-size:1.45rem;}
 .f-20{font-size:1.25rem;}
 .f-19{font-size:1.187rem;}
-.f-18{font-size:1.125rem;}
+.f-18 {
+	font-size: 1.125rem;
+	line-height: 2rem;
+}
 .f-17{font-size:1.062rem;}
 .f-16{font-size:1rem;}
 .f-15{font-size:.935rem;}
@@ -49,15 +82,18 @@ h1{font-size:4.3rem;}
 .f-13{font-size:.812rem;}
 .f-12{font-size:.75rem;}
 
-/*BEGIN max-width:480px Vmin 手機版文字大小*/
-@media (max-width:480px){
+/*BEGIN max-width:680px Vmin 手機版文字大小*/
+@media (max-width:680px){
   h1{font-size:10.5vmin;}
   .f-40{font-size:8.5vmin;}
   .f-32{font-size:7vmin;}
   .f-30{font-size:6.8vmin;}
   .f-20,.f-25{font-size:5.8vmin;}
   .f-19{font-size:5.7vmin;}
-  .f-18{font-size:5.6vmin;}
+  .f-18 {
+  	font-size: 5.6vmin;
+  	line-height: 7.5vmin;
+  }
   .f-17{font-size:5.3vmin;}
   .f-16{font-size:5vmin}
   .f-15{font-size:4.7vmin;}
