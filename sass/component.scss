@@ -1,0 +1,112 @@
+﻿@charset "utf-8";
+@import "variable";
+@import "extend";
+
+// The Modal (background)
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 3;
+	left: 50%;
+	top: 50%;
+	transform:translate(-50%,-50%);
+	width: 100%;
+	max-width: 700px;
+	overflow-y: auto;
+	&.visible {
+		display: block;
+	}
+	.modal-content {
+		background-color: $white;
+		@media (min-width:680px) {
+			border: 1px solid $light-gray;
+			background-clip: padding-box;
+			border-radius: 4px;
+		}
+		@media (max-width: 680px) {
+			height: 100vh;
+		}
+
+		.modal-header {
+			background-color: $black;
+			color: $white;
+			@extend %d-flex-between;
+			padding: 1rem 1.3rem;
+			border-top-left-radius: 4px;
+			border-top-right-radius: 4px;
+			@media (max-width: 680px) {
+				flex-direction: row-reverse;
+			}
+			.close {
+				cursor: pointer;
+				width: 16px;
+				height: 16px;
+				filter: invert(1);
+			}
+		}
+		.modal-body {
+			overflow-y: auto;
+			max-height: 65vh;
+			padding: 1rem 1.3rem;
+		}
+		.modal-footer {
+			padding: 0.4rem 1rem;
+		}
+	}
+}
+.modal-open {
+	overflow: hidden;
+	padding-right: 16px;
+}
+.modal-backdrop {
+	display: none;
+	position: fixed;
+	z-index: 2;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: $gray;
+	&.visible {
+		display: block;
+	}
+}
+
+// The Tooltip 
+.tooltip {
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px dotted $black;
+
+	.tooltip-text {
+		visibility: hidden;
+		font-size: 12px;
+		line-height: 25px;
+		letter-spacing: 1px;
+		width: 85px;
+		bottom: 150%;
+		left: 50%;
+		margin-left: -(85px/2);
+		background-color: rgba($black, 0.7);
+		color: $white;
+		text-align: center;
+		border-radius: 4px;
+		position: absolute;
+		z-index: 2;
+		&::after {
+			content: " ";
+			position: absolute;
+			top: 100%;
+			left: 50%;
+			margin-left: -5px;
+			border-width: 5px;
+			border-style: solid;
+			border-color: rgba($black, 0.7) transparent transparent;
+		}
+	}
+	&:hover {
+		.tooltip-text {
+			visibility: visible;
+		}
+	}
+}

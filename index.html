@@ -19,7 +19,7 @@
 			<p class="f-18 animated wow fadeInDown" data-wow-duration="1.0s" data-wow-delay=".4s">Living in the present & deep thinking.</p>
 			<p class="f-18 jobTitle animated wow fadeInDown" data-wow-duration="1.1s" data-wow-delay=".6s">Web UI / UX Designer</p>
 		</div>
-		<button class="btn icon icon-outline animated wow fadeInDown" id="menu01" data-wow-duration="1.1s" data-wow-delay=".8s">
+		<button class="btn icon icon-outline animated wow fadeInDown" id="btnScroll" data-wow-duration="1.1s" data-wow-delay=".8s">
 			<img src="images/icons/down_arrow.svg">
 		</button>
 	</div>
@@ -27,38 +27,107 @@
 		<figure>
 			<img class="animated wow fadeInRight" data-wow-duration="1.0s" data-wow-delay=".2s" src="images/jessica01.jpg">
 			<figcaption class="animated wow fadeInLeft" data-wow-duration="1.0s" data-wow-delay=".4s">
-				<h2 class="f-40">jessica wu <span class="f-32">吳姿嬋</span></h2>
-				<p class="info f-18">Hi, I'm a designer from Taiwan. I've been working in the design field for 8 years. My degrees are in Graphic Design. I have a hardwired desire to extended skills. I'm a self taught Web Designer.</p>
-				<p class="quote f-32">Put yourself in others' shoes for a different viewpoint.</p>
+				<h2 class="f-40">
+					jessica wu 
+					<span class="f-32">吳姿嬋</span>
+				</h2>
+				<p class="info f-18">
+					Hi, I'm a designer from Taiwan. I've been working in the design field for 9 years. My degrees are in Graphic Design. I have a hardwired desire to extended skills. I'm a self taught Web Designer.
+				</p>
+				<p class="quote f-32">
+					Put yourself in others' shoes for a different viewpoint.
+				</p>
 				<div class="btnGroup">
-					<button class="btn btn-primary f-13">
-						<span>PROFILE</span>
+					<button class="btn btn-primary f-13" id="myBtn">
+						PROFILE
 					</button>
 					<div class="iconGroup">
-						<button class="btn icon icon-sm icon-outline">
+						<button class="btn icon icon-sm icon-outline tooltip">
 							<img src="images/icons/linkedin.svg">
+							<span class="tooltip-text">Linkedin</span>
 						</button>
-						<button class="btn icon icon-sm icon-outline">
+						<button class="btn icon icon-sm icon-outline tooltip">
 							<img src="images/icons/envelopes.svg">
+							<span class="tooltip-text">Email me</span>
 						</button>
 					</div>	
 				</div>
 			</figcaption>
 		</figure>
-
+		<div class="modal" id="myModal">
+			<div class="modal-content">
+				<div class="modal-header">
+					<p class="f-14 modal-title">PROFILE</p>
+					<span class="close">
+						<img src="images/icons/close.svg">
+					</span>
+				</div>
+				<div class="modal-body">
+					<h3><i>Experiences</i></h3>
+					<div class="career">
+						<div class="period">
+							<p class="f-20"><b>Oriente</b></p>
+							<p class="f-14">Nov 2017 - Apr 2020</p>
+							<p class="f-13 location">Taipei City</p>
+						</div>
+						<div class="description">
+							<p class="f-16 jobTitle"><b>UI / UX Designer</b></p>
+							<p>
+								As a designer at Oriente, I work on projects like eStore, likestore (eCommerce platform) and CRM. Using frameworks and technologies such as Bootstrap, Vuetify and Sass, Git. 
+							</p>
+						</div>
+					</div>
+					<div class="career">
+						<div class="period">
+							<p class="f-20"><b>FunCity</b></p>
+							<p class="f-14">Mar 2017 - Jan 2018</p>
+							<p class="f-13 location">Taipei City</p>
+						</div>
+						<div class="description">
+							<p class="f-16 jobTitle"><b>Web Designer</b></p>
+							<p>
+								I work on project FunOO (e-commerce platform), redesign console and improve the user experience.
+							</p>
+						</div>
+					</div>
+					<div class="career">
+						<div class="period">
+							<p class="f-20"><b>Fujidinos</b></p>
+							<p class="f-14">Dec 2015 - Jun 2016</p>
+							<p class="f-13 location">Taipei City</p>
+						</div>
+						<div class="description">
+							<p class="f-16 jobTitle"><b>Web Visual Designer</b></p>
+							<p>
+								Fujidinos is a online shop. I am in charge of eDM (HTML & CSS) and banner visual design.
+							</p>
+						</div>
+					</div>
+					<div class="career">
+						<div class="period">
+							<p class="f-20"><b>La Vie</b></p>
+							<p class="f-14">Jun 2013 - Apr 2015</p>
+							<p class="f-13 location">Taipei City</p>
+						</div>
+						<div class="description">
+							<p class="f-16 jobTitle"><b>Art Editor</b></p>
+							<p>
+								La Vie is a lifestyle media. I am in charge of book design and marketing visual design.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer"></div>
+			</div>
+		</div>
+		<div class="modal-backdrop"></div>
 	</div>	
 
 <script src="js/jquery.min.js"></script>
 <script src="js/wow.js"></script>
+<script src="js/main.js"></script>
 <script>
-	$(document).ready(function(){
-	    $(function(){ $('#menu01').click(function(){ 
-	        $('html,body').animate({scrollTop:$('#profile').offset().top}, 700);});  
-	    }); 
-	}); 
-
-	new WOW().init();
-</script>	
+</script>
 
 </body>
 </html>
