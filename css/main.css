@@ -66,15 +66,20 @@
 .profile {
   padding: 40px 0;
 }
-@media (max-width: 680px) {
+@media (max-width: 768px) {
   .profile figure {
     flex-direction: column;
+  }
+}
+@media (min-width: 500px) and (max-width: 768px) {
+  .profile figure img {
+    width: 50%;
   }
 }
 .profile figure figcaption {
   margin: 0 20px;
 }
-@media (min-width: 680px) {
+@media (min-width: 768px) {
   .profile figure figcaption {
     width: 35%;
     margin: 0 70px;
@@ -83,7 +88,7 @@
 .profile figure figcaption h2 {
   font-family: Playfair Display;
 }
-@media (min-width: 680px) {
+@media (min-width: 768px) {
   .profile figure figcaption h2 {
     margin-top: 0;
   }
@@ -136,13 +141,14 @@
 }
 .profile .modal .modal-body .career .period {
   width: 30%;
+  padding-right: 5%;
 }
 .profile .modal .modal-body .career .period .location {
   color: rgba(0, 0, 0, 0.6);
   margin-top: 0.4rem;
 }
 .profile .modal .modal-body .career .description {
-  width: 70%;
+  width: 64%;
 }
 .profile .modal .modal-body .career .description .jobTitle {
   color: rgba(0, 0, 0, 0.8);
@@ -163,6 +169,17 @@
   }
   .profile .modal .modal-body .career .description .jobTitle {
     margin-top: 0.6rem;
+  }
+}
+@media (min-width: 680px) {
+  .profile .modal .modal-body .list ul {
+    column-count: 3;
+  }
+}
+@media (max-width: 680px) {
+  .profile .modal .modal-body .list {
+    border-bottom: thin solid rgba(0, 0, 0, 0.23);
+    padding-bottom: 0.7rem;
   }
 }
 

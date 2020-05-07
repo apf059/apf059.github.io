@@ -47,20 +47,23 @@
 	padding: 40px 0;
 	figure {
 		@extend %d-flex-center;
-		@media (max-width: 680px) {
+		@media (max-width: 768px) {
 			flex-direction: column;
 		}
-		img {
+		@media (min-width: 500px) and (max-width: 768px) {
+			img {
+				width: 50%;
+			}
 		}
 		figcaption {
 			margin: 0 20px;
-			@media (min-width: 680px) {
+			@media (min-width: 768px) {
 				width: 35%;
 				margin: 0 70px;
 			}
 			h2 {
 				font-family: Playfair Display;
-				@media (min-width: 680px) {
+				@media (min-width: 768px) {
 					margin-top: 0;
 				}
 				span {
@@ -115,13 +118,14 @@
 				margin: 2rem 1.5rem;
 				.period {
 					width: 30%;
+					padding-right: 5%;
 					.location {
 						color: $gray;
 						margin-top: 0.4rem;
 					}
 				}
 				.description {
-					width: 70%;
+					width: 64%;
 					.jobTitle {
 						color: rgba($black, 0.8);
 						padding-bottom: 0.4rem;
@@ -141,6 +145,17 @@
 							margin-top: 0.6rem;
 						}
 					}
+				}
+			}
+			.list {
+				@media (min-width: 680px) {
+					ul {
+						column-count: 3;
+					}
+				}
+				@media (max-width: 680px) {
+					border-bottom: thin solid $light-gray;
+					padding-bottom: 0.7rem;
 				}
 			}
 		}
