@@ -10,9 +10,13 @@ body, html {
   font-size: 16px;
   font-family: Muli;
 }
+h1, h2 {
+	font-family: Playfair Display;
+}
 
 img {
 	max-width: 100%;
+	vertical-align: middle;
 }
 .btn {
 	border: none;
@@ -29,7 +33,6 @@ img {
 		border-radius: 50%;
 		width: 40px;
 		height: 40px;
-		line-height: 40px;
 		&.icon-outline {
 			background-color: transparent;
 			border: thin solid rgba($black, 0.8);
@@ -40,11 +43,12 @@ img {
 		}
 		img {
 			width: 15px;
+			position: relative;
+			top: -1px;
 		}
 		&.icon-sm {
 			width: 35px;
 			height: 35px;
-			line-height: 35px;
 		}
 	}
 	&.btn-primary {
@@ -59,6 +63,7 @@ img {
 
 /*BEGIN font-size*/
 h1{font-size:4.3rem;}
+.f-44{font-size:2.8rem;}
 .f-40{font-size:2.5rem;}
 .f-32{font-size:2rem;}
 .f-30{font-size:1.875rem;}
@@ -79,6 +84,7 @@ h1{font-size:4.3rem;}
 /*BEGIN max-width:680px Vmin 手機版文字大小*/
 @media (max-width:680px){
   h1{font-size:10.5vmin;}
+  .f-44{font-size:9vmin;}
   .f-40{font-size:8.5vmin;}
   .f-32{font-size:7vmin;}
   .f-30{font-size:6.8vmin;}

@@ -10,18 +10,18 @@ new WOW().init();
 
 // component Modal
 $(document).ready(function(){
-	$("#myBtn").click(function(){
-		$("#myModal, .modal-backdrop").addClass("visible");
+	$("#btnProfile").click(function(){
+		$("#modalProfile, .modal-backdrop").addClass("visible");
 		$("body").addClass("modal-open");
 	});
 	$(".close").click(function(){
-		$("#myModal, .modal-backdrop").removeClass("visible");
+		$("#modalProfile, .modal-backdrop").removeClass("visible");
 		$("body").removeClass("modal-open");
 	});
 });
 $(document).click(function(event){
-	if (!$(event.target).closest("#myModal, #myBtn").length) {
-		$("body").find("#myModal, .modal-backdrop").removeClass("visible");
+	if (!$(event.target).closest("#modalProfile, #btnProfile").length) {
+		$("body").find("#modalProfile, .modal-backdrop").removeClass("visible");
 		$("body").removeClass("modal-open");
 	}
 });

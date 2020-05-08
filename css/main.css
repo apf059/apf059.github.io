@@ -3,13 +3,13 @@
 /* CSS Document */
 /* CSS Document */
 @import url("https://fonts.googleapis.com/css2?family=Oleo+Script&family=Muli:wght@400;800&family=Noto+Serif+TC:wght@700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap");
-.profile figure, .cover {
+.projects .likestore .imgGroup .imgBox .imgMask, .profile figure, .cover {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.profile figure figcaption .btnGroup {
+.projects .likestore .imgGroup, .profile figure figcaption .btnGroup {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -49,7 +49,6 @@
   text-align: center;
 }
 .cover .coverContent h1 {
-  font-family: Playfair Display;
   margin-bottom: 1rem;
 }
 .cover .coverContent p {
@@ -71,7 +70,7 @@
     flex-direction: column;
   }
 }
-@media (min-width: 500px) and (max-width: 768px) {
+@media (min-width: 500px) and (max-width: 880px) {
   .profile figure img {
     width: 50%;
   }
@@ -84,9 +83,6 @@
     width: 35%;
     margin: 0 70px;
   }
-}
-.profile figure figcaption h2 {
-  font-family: Playfair Display;
 }
 @media (min-width: 768px) {
   .profile figure figcaption h2 {
@@ -127,6 +123,9 @@
     top: -3px;
   }
 }
+.profile figure figcaption p.quote span {
+  display: inline-block;
+}
 .profile figure figcaption .btnGroup {
   border-top: thin solid rgba(0, 0, 0, 0.23);
   padding-top: 1rem;
@@ -134,6 +133,7 @@
 .profile .modal .modal-body h3 {
   margin-bottom: 1.2rem;
   font-family: Playfair Display;
+  color: #009999;
 }
 .profile .modal .modal-body .career {
   display: flex;
@@ -175,12 +175,80 @@
   .profile .modal .modal-body .list ul {
     column-count: 3;
   }
+  .profile .modal .modal-body .list ul li {
+    padding: 0.15rem 0;
+  }
 }
 @media (max-width: 680px) {
   .profile .modal .modal-body .list {
     border-bottom: thin solid rgba(0, 0, 0, 0.23);
     padding-bottom: 0.7rem;
   }
+}
+
+.projects {
+  padding: 20px 0 45px;
+  text-align: center;
+  box-sizing: border-box;
+  border: 1rem solid #FFFFFF;
+  background-color: #F0F0F0;
+}
+@media (max-width: 480px) {
+  .projects {
+    border: none;
+  }
+}
+.projects h2 {
+  margin-bottom: 1rem;
+}
+.projects .likestore {
+  width: 80%;
+  margin: 0 auto;
+}
+.projects .likestore .info {
+  margin: 1.2rem 0 1.5rem;
+  border-top: thin solid rgba(0, 0, 0, 0.23);
+  border-bottom: thin solid rgba(0, 0, 0, 0.23);
+}
+.projects .likestore .info h3 {
+  line-height: 2.125rem;
+}
+.projects .likestore .info h3 span {
+  font-weight: 400;
+}
+@media (max-width: 768px) {
+  .projects .likestore .imgGroup {
+    flex-direction: column;
+  }
+}
+.projects .likestore .imgGroup .imgBox {
+  margin-bottom: 0.8rem;
+  position: relative;
+}
+@media (min-width: 768px) {
+  .projects .likestore .imgGroup .imgBox {
+    width: 32.2%;
+  }
+}
+.projects .likestore .imgGroup .imgBox .imgMask {
+  background-color: rgba(0, 0, 0, 0.65);
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #FFFFFF;
+  transition: all 0.4s ease-out;
+}
+.projects .likestore .imgGroup .imgBox .imgMask:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.projects .likestore .imgGroup .imgBox .imgMask .txtBox .title {
+  font-family: Playfair Display;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
 }
 
 /*# sourceMappingURL=main.css.map */
