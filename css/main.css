@@ -3,13 +3,13 @@
 /* CSS Document */
 /* CSS Document */
 @import url("https://fonts.googleapis.com/css2?family=Oleo+Script&family=Muli:wght@400;800&family=Noto+Serif+TC:wght@700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap");
-.projects .likestore .imgGroup .imgBox .imgMask, .profile figure, .cover {
+.projects .imgBox .imgMask, .profile figure, .cover {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.projects .likestore .imgGroup, .profile figure figcaption .btnGroup {
+.projects .projectMix, .projects .likestore .imgGroup, .profile figure figcaption .btnGroup {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -76,7 +76,7 @@
   }
 }
 .profile figure figcaption {
-  margin: 0 20px;
+  margin: 0 27px;
 }
 @media (min-width: 768px) {
   .profile figure figcaption {
@@ -201,36 +201,25 @@
 .projects h2 {
   margin-bottom: 1rem;
 }
-.projects .likestore {
+.projects > div {
   width: 80%;
   margin: 0 auto;
 }
-.projects .likestore .info {
+.projects .info {
   margin: 1.2rem 0 1.5rem;
   border-top: thin solid rgba(0, 0, 0, 0.23);
   border-bottom: thin solid rgba(0, 0, 0, 0.23);
 }
-.projects .likestore .info h3 {
+.projects .info h3 {
   line-height: 2.125rem;
 }
-.projects .likestore .info h3 span {
+.projects .info h3 span {
   font-weight: 400;
 }
-@media (max-width: 768px) {
-  .projects .likestore .imgGroup {
-    flex-direction: column;
-  }
-}
-.projects .likestore .imgGroup .imgBox {
-  margin-bottom: 0.8rem;
+.projects .imgBox {
   position: relative;
 }
-@media (min-width: 768px) {
-  .projects .likestore .imgGroup .imgBox {
-    width: 32.2%;
-  }
-}
-.projects .likestore .imgGroup .imgBox .imgMask {
+.projects .imgBox .imgMask {
   background-color: rgba(0, 0, 0, 0.65);
   position: absolute;
   opacity: 0;
@@ -241,14 +230,59 @@
   color: #FFFFFF;
   transition: all 0.4s ease-out;
 }
-.projects .likestore .imgGroup .imgBox .imgMask:hover {
+.projects .imgBox .imgMask:hover {
   opacity: 1;
   cursor: pointer;
 }
-.projects .likestore .imgGroup .imgBox .imgMask .txtBox .title {
+.projects .imgBox .imgMask .txtBox .title {
   font-family: Playfair Display;
   margin-bottom: 1rem;
   letter-spacing: 1px;
+}
+@media (max-width: 768px) {
+  .projects .likestore .imgGroup {
+    flex-direction: column;
+  }
+}
+.projects .likestore .imgGroup .imgBox {
+  margin-bottom: 0.8rem;
+}
+@media (min-width: 768px) {
+  .projects .likestore .imgGroup .imgBox {
+    width: 32.2%;
+  }
+}
+.projects .projectMix {
+  align-items: stretch;
+  margin-top: 1.5rem;
+}
+@media (max-width: 1250px) {
+  .projects .projectMix {
+    flex-direction: column;
+  }
+}
+@media (min-width: 1250px) {
+  .projects .projectMix .crm {
+    width: 65%;
+  }
+}
+.projects .projectMix .funoo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (min-width: 1250px) {
+  .projects .projectMix .funoo {
+    width: 30%;
+  }
+}
+@media (max-width: 1250px) {
+  .projects .projectMix .funoo {
+    margin-top: 1.5rem;
+  }
+  .projects .projectMix .funoo .imgBox {
+    margin-bottom: 0.8rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

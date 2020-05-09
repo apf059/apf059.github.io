@@ -83,6 +83,11 @@ h1{font-size:4.3rem;}
 
 /*BEGIN max-width:680px Vmin 手機版文字大小*/
 @media (max-width:680px){
+	.info {
+		h3 {
+			line-height: 6.5vmin !important;
+		}
+	}
   h1{font-size:10.5vmin;}
   .f-44{font-size:9vmin;}
   .f-40{font-size:8.5vmin;}
