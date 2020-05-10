@@ -3,7 +3,7 @@
 @import "component.css";
 @import "variable";
 @import "extend";
-@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&family=Muli:wght@400;800&family=Noto+Serif+TC:wght@700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&family=Muli:wght@400;800&family=Noto+Serif+TC:wght@700&family=Playfair+Display:ital,wght@0,700;1,700&family=Noto+Sans+TC:wght@700&display=swap');
 .cover {
 	@extend %d-flex-center;
 	position: relative;
@@ -167,16 +167,7 @@
 	}	
 }
 
-.projects {
-	padding: 20px 0 45px;
-	text-align: center;
-	box-sizing: border-box;
-	border: 1rem solid $white;	
-	background-color: #F0F0F0;
-	@media (max-width: 480px) {
-		border: none;
-		// padding: 0 1rem;
-	}
+.projects, .books {
 	h2 {
 		margin-bottom: 1rem;
 	}
@@ -192,6 +183,7 @@
 			line-height: 2.125rem;
 			span {
 				font-weight: 400;
+				font-family: Muli;
 			}
 		}
 	}
@@ -220,6 +212,18 @@
 				}
 			}
 		}
+	}
+}
+
+.projects {
+	padding: 20px 0 45px;
+	text-align: center;
+	box-sizing: border-box;
+	border: 1rem solid $white;	
+	background-color: #F0F0F0;
+	@media (max-width: 480px) {
+		border: none;
+		// padding: 0 1rem;
 	}
 	.likestore {
 		.imgGroup {
@@ -259,6 +263,26 @@
 				.imgBox {
 					margin-bottom: 0.8rem;
 				}
+			}
+		}
+	}
+}
+
+.books {
+	padding: 20px 0 45px;
+	text-align: center;
+	.bookMix {
+		@extend %d-flex-between;
+		align-items: stretch;
+
+		.info {
+			h3 {
+				font-family: Noto Sans TC;
+			}
+		}
+		.taitung, .dish {
+			@media (min-width: 1250px) {
+				width: 48%;
 			}
 		}
 	}
