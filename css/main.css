@@ -205,11 +205,16 @@
   font-weight: 400;
   font-family: Muli;
 }
+@media (max-width: 768px) {
+  .projects .info h3 span, .books .info h3 span {
+    display: block;
+  }
+}
 .projects .imgBox, .books .imgBox {
   position: relative;
 }
 .projects .imgBox .imgMask, .books .imgBox .imgMask {
-  background-color: rgba(0, 0, 0, 0.65);
+  background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
   opacity: 0;
   top: 0;
@@ -225,7 +230,7 @@
 }
 .projects .imgBox .imgMask .txtBox .title, .books .imgBox .imgMask .txtBox .title {
   font-family: Playfair Display;
-  margin-bottom: 1rem;
+  margin-bottom: 0.4rem;
   letter-spacing: 1px;
 }
 
@@ -291,16 +296,48 @@
   padding: 20px 0 45px;
   text-align: center;
 }
-.books .bookMix {
-  align-items: stretch;
+@media (max-width: 768px) {
+  .books h2 {
+    margin-bottom: 0;
+  }
 }
-.books .bookMix .info h3 {
+.books .info {
+  border-top: none;
+}
+.books .info h3 {
   font-family: Noto Sans TC;
 }
-@media (min-width: 1250px) {
-  .books .bookMix .taitung, .books .bookMix .dish {
-    width: 48%;
+@media (max-width: 768px) {
+  .books .info {
+    margin-top: 0.7rem;
+    padding-bottom: 0.5rem;
   }
+}
+.books .bookMix {
+  align-items: stretch;
+  margin-top: 2.5rem;
+}
+@media (max-width: 768px) {
+  .books .bookMix {
+    flex-direction: column;
+    margin-top: 0;
+  }
+}
+@media (min-width: 1250px) {
+  .books .bookMix > div {
+    width: 49%;
+  }
+  .books .bookMix > div.single {
+    width: 23.5%;
+  }
+}
+@media (max-width: 768px) {
+  .books .bookMix > div {
+    margin-top: 1.5rem;
+  }
+}
+.books .bookMix .imgBox .imgMask .txtBox p.title {
+  font-family: Noto Serif TC;
 }
 
 /*# sourceMappingURL=main.css.map */
