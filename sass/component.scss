@@ -11,7 +11,7 @@
 	top: 50%;
 	transform:translate(-50%,-50%);
 	width: 100%;
-	max-width: 700px;
+	max-width: 650px;
 	@media (max-width: 680px) {
 		background-color: $white;
 	}
@@ -30,8 +30,6 @@
 		}
 
 		.modal-header {
-			background-color: $black;
-			color: $white;
 			@extend %d-flex-between;
 			padding: 1rem 1.3rem;
 			@media (max-width: 680px) {
@@ -45,10 +43,13 @@
 				cursor: pointer;
 				width: 16px;
 				height: 16px;
-				filter: invert(1);
+				img {
+					vertical-align: baseline;
+				}
 			}
 		}
 		.modal-body {
+			border-top: thin solid rgba($black, 0.12);
 			padding: 1rem 1.3rem;
 			overflow-y: auto;
 			height: calc(100vh - 4rem);
@@ -58,6 +59,11 @@
 		}
 		.modal-footer {
 			padding: 0.4rem 1rem;
+		}
+	}
+	&.no-action {
+		.modal-footer {
+			display: none;
 		}
 	}
 }
@@ -73,7 +79,7 @@
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background-color: $gray;
+	background-color: rgba($black, 0.5);
 	&.visible {
 		display: block;
 	}

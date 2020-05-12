@@ -15,7 +15,7 @@
   justify-content: space-between;
 }
 
-.profile figure figcaption p.quote:before, .cover:before {
+.profile .modal .modal-body .career .period .location:before, .profile figure figcaption p.quote:before, .cover:before {
   content: "";
   display: block;
   position: absolute;
@@ -70,7 +70,7 @@
     flex-direction: column;
   }
 }
-@media (min-width: 500px) and (max-width: 880px) {
+@media (min-width: 500px) and (max-width: 980px) {
   .profile figure img {
     width: 50%;
   }
@@ -95,6 +95,7 @@
   padding-left: 15px;
   margin-left: 7px;
   border-left: thin solid rgba(0, 0, 0, 0.6);
+  display: inline-block;
 }
 .profile figure figcaption p.quote {
   font-family: Oleo Script;
@@ -130,25 +131,36 @@
   border-top: thin solid rgba(0, 0, 0, 0.23);
   padding-top: 1rem;
 }
-.profile .modal .modal-body h3 {
-  margin-bottom: 1.2rem;
-  font-family: Playfair Display;
-  color: #009999;
+.profile .modal .modal-body .label {
+  color: rgba(0, 0, 0, 0.6);
 }
 .profile .modal .modal-body .career {
   display: flex;
-  margin: 2rem 1.5rem;
+  margin: 1.5rem;
 }
 .profile .modal .modal-body .career .period {
-  width: 30%;
+  width: 34%;
   padding-right: 5%;
 }
+.profile .modal .modal-body .career .period .company {
+  font-family: Playfair Display;
+}
 .profile .modal .modal-body .career .period .location {
+  font-size: 0.812rem;
+  position: relative;
   color: rgba(0, 0, 0, 0.6);
   margin-top: 0.4rem;
+  padding-left: 1.1rem;
+}
+.profile .modal .modal-body .career .period .location:before {
+  width: 15px;
+  height: 15px;
+  background: url(../images/icons/pin.svg) top no-repeat;
+  top: 1px;
+  filter: opacity(0.3);
 }
 .profile .modal .modal-body .career .description {
-  width: 64%;
+  width: 60%;
 }
 .profile .modal .modal-body .career .description .jobTitle {
   color: rgba(0, 0, 0, 0.8);
@@ -183,6 +195,26 @@
   .profile .modal .modal-body .list {
     border-bottom: thin solid rgba(0, 0, 0, 0.23);
     padding-bottom: 0.7rem;
+  }
+}
+@media (min-width: 681px) {
+  .profile .modal .modal-body {
+    background-color: #F5F5F5;
+  }
+  .profile .modal .modal-body .career {
+    align-items: stretch;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.6) 15px, #FFFFFF 0) top left;
+    padding: 1rem;
+    min-height: 85px;
+    border-radius: 4px;
+    box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  }
+  .profile .modal .modal-body .career .period {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 5%;
+    border-right: thin solid rgba(0, 0, 0, 0.12);
   }
 }
 
@@ -317,7 +349,7 @@
   align-items: stretch;
   margin-top: 2.5rem;
 }
-@media (max-width: 768px) {
+@media (max-width: 1250px) {
   .books .bookMix {
     flex-direction: column;
     margin-top: 0;
@@ -331,13 +363,18 @@
     width: 23.5%;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 1250px) {
   .books .bookMix > div {
     margin-top: 1.5rem;
   }
 }
-.books .bookMix .imgBox .imgMask .txtBox p.title {
-  font-family: Noto Serif TC;
+.books .bookMix .imgBox {
+  overflow: hidden;
+}
+.books .bookMix .imgBox img:hover {
+  cursor: pointer;
+  transform: scale(1.08);
+  transition: all 1s ease-out;
 }
 
 /*# sourceMappingURL=main.css.map */

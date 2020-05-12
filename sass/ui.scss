@@ -54,9 +54,9 @@ img {
 	&.btn-primary {
 		padding: 0.5rem 1rem;
 		&:hover {
-			box-shadow: 0 3px 1px -2px $gray;
-			box-shadow: 0 2px 2px 0 $gray;
-			box-shadow: 0 1px 5px 0 $gray;
+			box-shadow: 0 3px 1px -2px $gray,
+						0 2px 2px 0 $gray,
+						0 1px 5px 0 $gray;
 		}
 	}
 }
@@ -76,7 +76,10 @@ h1{font-size:4.3rem;}
 }
 .f-17{font-size:1.062rem;}
 .f-16{font-size:1rem;}
-.f-15{font-size:.935rem;}
+.f-15{ 
+	font-size:.935rem;
+	line-height: 1.3rem;
+}
 .f-14{font-size:.875rem;}
 .f-13{font-size:.812rem;}
 .f-12{font-size:.75rem;}
@@ -101,7 +104,10 @@ h1{font-size:4.3rem;}
   }
   .f-17{font-size:5.3vmin;}
   .f-16{font-size:5vmin}
-  .f-15{font-size:4.7vmin;}
+  .f-15{
+  	font-size:4.7vmin;
+  	line-height: 6.6vmin;
+  }
   .f-14{font-size:4.3vmin;}
   .f-13,.f-12{font-size:4vmin;}
 }
