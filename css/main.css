@@ -136,7 +136,7 @@
 }
 .profile .modal .modal-body .career {
   display: flex;
-  margin: 1.5rem;
+  margin: 1.5rem 2rem;
 }
 .profile .modal .modal-body .career .period {
   width: 34%;
@@ -215,6 +215,12 @@
     justify-content: space-between;
     margin-right: 5%;
     border-right: thin solid rgba(0, 0, 0, 0.12);
+  }
+  .profile .modal .modal-body .career.school .period {
+    width: 42%;
+  }
+  .profile .modal .modal-body .career.school .description {
+    width: 52%;
   }
 }
 

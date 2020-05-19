@@ -116,7 +116,7 @@
 			}
 			.career {
 				display: flex;
-				margin: 1.5rem;
+				margin: 1.5rem 2rem;
 				.period {
 					width: 34%;
 					padding-right: 5%;
@@ -193,6 +193,14 @@
 						justify-content: space-between;
 						margin-right: 5%;
 						border-right: thin solid rgba($black, 0.12);
+					}
+					&.school {
+						.period {
+							width: 42%;
+						}
+						.description {
+							width: 52%;
+						}
 					}
 				}					
 			}
@@ -329,7 +337,6 @@
 			flex-direction: column;
 			margin-top: 0;
 		}
-
 		>div {
 			@media (min-width: 1250px) {
 				width: 49%;
