@@ -13,7 +13,7 @@
 </head>
 
 <body>	
-	<div class="cover">	
+	<section class="cover">	
 		<div class="coverContent">						
 			<h1 class="animated wow fadeIn" data-wow-duration="1.0s" data-wow-delay=".2s">jessica wu</h1>
 			<p class="f-18 animated wow fadeInDown" data-wow-duration="1.0s" data-wow-delay=".4s">Living in the present & deep thinking.</p>
@@ -22,9 +22,18 @@
 		<button class="btn icon icon-outline animated wow fadeInDown" id="btnScroll" data-wow-duration="1.1s" data-wow-delay=".8s">
 			<img src="images/icons/down_arrow.svg">
 		</button>
-	</div>
-	<div class="profile" id="profile">
-		<figure>
+	</section>
+	<div class="contentWrap">	
+		<nav class="stickyNav">
+			<ul>
+				<li>profile</li>
+				<li>projects</li>
+				<li>books</li>
+				<li>marketing</li>
+			</ul>
+		</nav>
+		<section class="profile" id="profile">
+			<figure>
 			<img class="animated wow fadeInRight" data-wow-duration="1.0s" data-wow-delay=".2s" src="images/jessica01.jpg">
 			<figcaption class="animated wow fadeInLeft" data-wow-duration="1.0s" data-wow-delay=".4s">
 				<h2 class="f-40">
@@ -54,8 +63,8 @@
 					</div>	
 				</div>
 			</figcaption>
-		</figure>
-		<div class="modal no-action" id="modalProfile">
+			</figure>
+			<div class="modal no-action" id="modalProfile">
 			<div class="modal-content">
 				<div class="modal-header">
 					<h3 class="f-15 modal-title">PROFILE</h3>
@@ -171,9 +180,9 @@
 				</div>
 				<div class="modal-footer"></div>
 			</div>
-		</div>
-	</div>
-	<div class="projects">
+			</div>
+		</section>
+		<section class="projects">
 		<h2 class="f-44 animated wow fadeInDown" data-wow-duration="1.0s" data-wow-delay=".4s">projects</h2>
 		<div class="likestore">
 			<div class="info animated wow fadeInDown" data-wow-duration="1.0s" data-wow-delay=".4s">
@@ -270,8 +279,8 @@
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="books">
+		</section>
+		<section class="books">
 		<h2 class="f-44 animated wow fadeInDown" data-wow-duration="1.0s" data-wow-delay=".4s">books</h2>
 		<div class="bookMix">
 			<div class="taitung animated wow fadeInRight" data-wow-duration="1.0s" data-wow-delay=".2s">
@@ -332,8 +341,9 @@
 				</div>
 			</div>
 		</div>
+		</section>
 	</div>
-    <div class="footer"></div>
+    <section class="footer"></section>
 	<div class="modal-backdrop"></div>
 
 <script src="js/jquery.min.js"></script>

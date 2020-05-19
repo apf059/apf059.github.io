@@ -147,7 +147,7 @@
 @media (max-width: 480px) {
   .my-footer {
     border: none;
-    padding: 1rem;
+    padding: 1rem 1rem 2rem;
   }
 }
 .my-footer > div {
@@ -166,9 +166,6 @@
     flex-direction: column-reverse;
   }
 }
-.my-footer > div .left-col {
-  letter-spacing: 1px;
-}
 .my-footer > div .left-col ul {
   margin: 0 0 2rem;
   list-style: none;
@@ -176,6 +173,7 @@
 }
 .my-footer > div .left-col ul li {
   text-transform: uppercase;
+  letter-spacing: 1px;
   margin: 0.8rem 0;
 }
 @media (min-width: 769px) {
@@ -225,6 +223,25 @@
 }
 .my-footer > div .right-col p span {
   display: block;
+}
+
+.stickyNav {
+  background: rgba(255, 255, 255, 0.6);
+  top: 0;
+  right: 0;
+  padding: 5px 16px;
+  z-index: 3;
+  font-weight: 800;
+  letter-spacing: 1px;
+  border-left: thin solid rgba(0, 0, 0, 0.23);
+}
+.stickyNav ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+.stickyNav ul li {
+  margin: 6px 0;
 }
 
 /*# sourceMappingURL=component.css.map */

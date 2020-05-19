@@ -25,6 +25,10 @@
   left: 0;
 }
 
+.contentWrap {
+  position: relative;
+}
+
 .cover {
   position: relative;
   height: 100vh;
@@ -228,7 +232,7 @@
   margin-bottom: 1rem;
 }
 .projects > div, .books > div {
-  width: 80%;
+  width: 78%;
   margin: 0 auto;
 }
 .projects .info, .books .info {

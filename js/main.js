@@ -25,3 +25,17 @@ $(document).click(function(event){
 		$("body").removeClass("modal-open");
 	}
 });
+
+// sticky Nav
+$(document).ready(function() {
+  var stickyTop = $('.stickyNav').offset().top;
+
+  $(window).scroll(function() {
+    var windowTop = $(window).scrollTop();
+    if (stickyTop < windowTop) {
+      $('.stickyNav').css('position', 'fixed');
+    } else {
+      $('.stickyNav').css('position', 'absolute');
+    }
+  });
+});

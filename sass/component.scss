@@ -139,7 +139,7 @@
 	margin-top: 1rem;
 	@media (max-width: 480px) {
 		border: none;
-		padding: 1rem;
+		padding: 1rem 1rem 2rem;
 	}
 	>div {
 		@extend %d-flex-between;
@@ -154,13 +154,13 @@
 			flex-direction: column-reverse;
 		}
 		.left-col {
-			letter-spacing: 1px;
 			ul {
 				margin: 0 0 2rem;
 				list-style: none;
 				padding-left: 0;
 				li {
 					text-transform: uppercase;
+					letter-spacing: 1px;
 					margin: 0.8rem 0;
 					@media (min-width: 769px) {
 						display: inline-block;
@@ -212,6 +212,26 @@
 					display: block;
 				}
 			}
+		}
+	}
+}
+
+// Nav
+.stickyNav {
+	background: rgba($white, 0.6);
+	top: 0;
+	right: 0;
+	padding: 5px 16px;
+	z-index: 3;
+	font-weight: 800;
+	letter-spacing: 1px;
+	border-left: thin solid $light-gray;
+	ul {
+		list-style: none;
+		padding-left: 0;
+		margin: 0;
+		li {
+			margin: 6px 0;
 		}
 	}
 }
