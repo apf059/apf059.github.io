@@ -39,3 +39,17 @@ $(document).ready(function() {
     }
   });
 });
+
+$(window).scroll(function() {
+    var currentTop = $(window).scrollTop();
+    var elems = $('.section');
+    elems.each(function(index){
+      var elemTop 	= $(this).offset().top;
+      var elemBottom 	= elemTop + $(this).height();
+      if(currentTop >= elemTop-100 && currentTop <= elemBottom){
+        var id 		= $(this).attr('id');
+        var navElem = $('a[href="#' + id+ '"]');
+    navElem.parent().addClass('active').siblings().removeClass( 'active' );
+      }
+    })
+});
