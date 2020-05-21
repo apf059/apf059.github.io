@@ -220,20 +220,29 @@
 .stickyNav {
 	top: 16px;
 	right: 0;
-	padding: 0 16px;
+	padding: 0 0 0 12px;
 	z-index: 2;
 	font-size: 14px;
 	letter-spacing: 0.8px;
 	text-transform: uppercase;
 	border-left: thin solid $light-gray;
+	transition: all 1s ease-out;
 	ul {
 		list-style: none;
 		padding-left: 0;
 		margin: 0;
 		li {
 			margin: 12px 0;
+			padding: 2px 8px 3px 8px;
+			position: relative;
+			a {
+				color: $black;
+			}
 			&.active {
-				font-weight: bold;
+				background: $black;
+				a {
+					color: $white;
+				}
 			}
 		}
 	}

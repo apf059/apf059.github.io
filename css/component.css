@@ -228,12 +228,13 @@
 .stickyNav {
   top: 16px;
   right: 0;
-  padding: 0 16px;
+  padding: 0 0 0 12px;
   z-index: 2;
   font-size: 14px;
   letter-spacing: 0.8px;
   text-transform: uppercase;
   border-left: thin solid rgba(0, 0, 0, 0.23);
+  transition: all 1s ease-out;
 }
 .stickyNav ul {
   list-style: none;
@@ -242,9 +243,17 @@
 }
 .stickyNav ul li {
   margin: 12px 0;
+  padding: 2px 8px 3px 8px;
+  position: relative;
+}
+.stickyNav ul li a {
+  color: #000000;
 }
 .stickyNav ul li.active {
-  font-weight: bold;
+  background: #000000;
+}
+.stickyNav ul li.active a {
+  color: #FFFFFF;
 }
 
 /*# sourceMappingURL=component.css.map */
