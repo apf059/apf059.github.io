@@ -9,7 +9,7 @@
 .modal {
   display: none;
   position: fixed;
-  z-index: 3;
+  z-index: 4;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -90,7 +90,7 @@
 .modal-backdrop {
   display: none;
   position: fixed;
-  z-index: 2;
+  z-index: 3;
   top: 0;
   right: 0;
   bottom: 0;
@@ -226,13 +226,13 @@
 }
 
 .stickyNav {
-  background: rgba(255, 255, 255, 0.6);
-  top: 0;
+  top: 16px;
   right: 0;
-  padding: 5px 16px;
-  z-index: 3;
-  font-weight: 800;
-  letter-spacing: 1px;
+  padding: 0 16px;
+  z-index: 2;
+  font-size: 14px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
   border-left: thin solid rgba(0, 0, 0, 0.23);
 }
 .stickyNav ul {
@@ -241,7 +241,7 @@
   margin: 0;
 }
 .stickyNav ul li {
-  margin: 6px 0;
+  margin: 12px 0;
 }
 
 /*# sourceMappingURL=component.css.map */

@@ -1,7 +1,7 @@
 // cover btn scroll
 $(document).ready(function(){
     $(function(){ $('#btnScroll').click(function(){ 
-        $('html,body').animate({scrollTop:$('#profile').offset().top}, 700);});  
+        $('html,body').animate({scrollTop:$('#contentWrap').offset().top}, 700);});  
     }); 
 }); 
 

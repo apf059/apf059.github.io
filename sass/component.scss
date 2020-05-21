@@ -6,7 +6,7 @@
 .modal {
 	display: none;
 	position: fixed;
-	z-index: 3;
+	z-index: 4;
 	left: 50%;
 	top: 50%;
 	transform:translate(-50%,-50%);
@@ -79,7 +79,7 @@
 .modal-backdrop {
 	display: none;
 	position: fixed;
-	z-index: 2;
+	z-index: 3;
 	top: 0;
 	right: 0;
 	bottom: 0;
@@ -218,20 +218,20 @@
 
 // Nav
 .stickyNav {
-	background: rgba($white, 0.6);
-	top: 0;
+	top: 16px;
 	right: 0;
-	padding: 5px 16px;
-	z-index: 3;
-	font-weight: 800;
-	letter-spacing: 1px;
+	padding: 0 16px;
+	z-index: 2;
+	font-size: 14px;
+	letter-spacing: 0.8px;
+	text-transform: uppercase;
 	border-left: thin solid $light-gray;
 	ul {
 		list-style: none;
 		padding-left: 0;
 		margin: 0;
 		li {
-			margin: 6px 0;
+			margin: 12px 0;
 		}
 	}
 }
