@@ -166,17 +166,20 @@
 				}
 			}
 			.list {
-				@media (min-width: 680px) {
-					ul {
-						column-count: 3;
-						li {
-							padding: 0.15rem 0;
-						}
-					}
-				}
 				@media (max-width: 680px) {
 					border-bottom: thin solid $light-gray;
-					padding-bottom: 0.7rem;
+					margin-bottom: 1.5rem;
+				}
+				ul {
+					padding-left: 1.5rem;		
+					@media (min-width: 480px) {
+						column-count: 3;
+						padding-left: 3rem;
+						margin: 0.5rem 0 1.5rem;
+					}
+					li {
+						padding: 0.15rem 0;
+					}		
 				}
 			}
 			@media (min-width: 681px) {
@@ -198,6 +201,7 @@
 						border-right: thin solid rgba($black, 0.12);
 					}
 					&.school {
+						align-items: center;
 						.period {
 							width: 42%;
 						}
