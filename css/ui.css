@@ -52,6 +52,12 @@ img {
   background-color: rgba(0, 0, 0, 0.15);
   transition: all 1s ease-out;
 }
+.btn.icon.icon-border-none {
+  background-color: transparent;
+}
+.btn.icon.icon-border-none img {
+  width: 20px;
+}
 .btn.icon img {
   width: 15px;
   position: relative;
