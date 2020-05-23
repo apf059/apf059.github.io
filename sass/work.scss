@@ -1,0 +1,45 @@
+﻿@charset "utf-8";
+@import "ui.css";
+@import "component.css";
+@import "variable";
+@import "extend";
+.workWrap {
+	position: relative;
+	section {
+		box-sizing: border-box;
+		border: 1rem solid $white;
+		@media (max-width: 480px) {
+			border: none;
+		}
+	}
+}
+
+.section-info {
+	figure {
+		@extend %d-flex-between;
+		@media (max-width: 1250px) {
+			flex-direction: column;
+		}
+		@media (min-width: 1251px) {
+			img {
+				width: 900px;
+			}
+			figcaption {
+				width: 35%;
+				margin: 0 70px;
+			}
+		}
+	}
+	.info {
+		margin: 0 0 1.5rem;
+		border-top: thin solid $light-gray;
+	}
+}
+.section-desc {
+	margin: 5rem 0 1.5rem;
+	@extend %d-flex-center;
+	figure {
+		width: 50%;
+		text-align: center;
+	}
+}

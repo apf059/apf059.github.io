@@ -1,0 +1,57 @@
+@import "ui.css";
+@import "component.css";
+/* CSS Document */
+/* CSS Document */
+.section-desc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-info figure {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.workWrap {
+  position: relative;
+}
+.workWrap section {
+  box-sizing: border-box;
+  border: 1rem solid #FFFFFF;
+}
+@media (max-width: 480px) {
+  .workWrap section {
+    border: none;
+  }
+}
+
+@media (max-width: 1250px) {
+  .section-info figure {
+    flex-direction: column;
+  }
+}
+@media (min-width: 1251px) {
+  .section-info figure img {
+    width: 900px;
+  }
+  .section-info figure figcaption {
+    width: 35%;
+    margin: 0 70px;
+  }
+}
+.section-info .info {
+  margin: 0 0 1.5rem;
+  border-top: thin solid rgba(0, 0, 0, 0.23);
+}
+
+.section-desc {
+  margin: 5rem 0 1.5rem;
+}
+.section-desc figure {
+  width: 50%;
+  text-align: center;
+}
+
+/*# sourceMappingURL=work.css.map */
