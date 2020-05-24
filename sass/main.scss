@@ -110,22 +110,20 @@
 	padding: 45px 0;
 	figure {
 		@extend %d-flex-center;
-		@media (max-width: 768px) {
-			flex-direction: column;
-		}
-		@media (min-width: 500px) and (max-width: 980px) {
+		flex-wrap: wrap;
+		@media (min-width: 500px) and (max-width: 950px) {
 			img {
 				width: 50%;
 			}
 		}
 		figcaption {
 			margin: 0 27px;
-			@media (min-width: 768px) {
+			@media (min-width: 950px) {
 				width: 35%;
 				margin: 0 70px;
 			}
 			h2 {
-				@media (min-width: 768px) {
+				@media (min-width: 950px) {
 					margin-top: 0;
 				}
 				span {
@@ -310,9 +308,7 @@
 	.likestore {
 		.imgGroup {
 			@extend %d-flex-between;
-			@media (max-width: 768px) {
-				flex-direction: column;
-			}
+			flex-wrap: wrap;
 			.imgBox {
 				@media (min-width: 768px) {
 					width: 32.2%;
@@ -324,9 +320,7 @@
 	.projectMix {
 		@extend %d-flex-between;
 		align-items: stretch;
-		@media (max-width: 1250px) {
-			flex-direction: column;
-		}
+		flex-wrap: wrap;
 		margin-top: 1.5rem;
 		.crm {
 			@media (min-width: 1250px) {

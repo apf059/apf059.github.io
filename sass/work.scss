@@ -4,31 +4,39 @@
 @import "variable";
 @import "extend";
 .workWrap {
+	section {
+		box-sizing: border-box;
+		border: 1rem solid $white;
+		@media (max-width: 480px) {
+			border: none;
+		}
+	}
 	.contentWrap {
 		position: relative;
-		section {
-			box-sizing: border-box;
-			border: 1rem solid $white;
-			@media (max-width: 480px) {
-				border: none;
-			}
-		}
+		max-width: 1600px;
+		margin: 0 auto;
 	}
 }
 
 .section-info {
+	@media (min-width: 1250px) {
+		height: 100vh;
+	}
 	figure {
 		@extend %d-flex-between;
-		@media (max-width: 1250px) {
+		@media (max-width: 768px) {
 			flex-direction: column;
 		}
-		@media (min-width: 1251px) {
-			img {
-				width: 900px;
+		img {
+			@media (min-width: 769px) {
+				width: 65%;
 			}
-			figcaption {
-				width: 35%;
-				margin: 0 70px;
+		}
+		figcaption {
+			margin: 0 27px 1rem;
+			@media (min-width: 769px) {
+				width: 32%;
+				margin: 0 70px
 			}
 		}
 	}
@@ -38,9 +46,23 @@
 	}
 }
 .section-desc {
-	margin: 5rem 0 1.5rem;
-	@extend %d-flex-center;
+	margin: 0 0 1.5rem;
+	display: flex;
+	flex-wrap: wrap;
+	@media (min-width: 769px) {
+		figure {
+			width: 50%;
+		}
+	}
+}
+.section-demo {
+	background: #F0F0F0;
+	padding: 3rem 0;
 	figure {
-		width: 50%;
+		padding-top: 5px;
+		width: 75%;
+		margin: 0 auto;
+		background: $white;
+		border-radius: 8px;
 	}
 }

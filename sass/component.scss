@@ -209,7 +209,10 @@
 				padding-top: 0.3rem;
 				border-top: thin solid rgba($white, 0.5);
 				span {
-					display: block;
+					display: inline-block;
+					a {
+						color: inherit;
+					}
 				}
 			}
 		}
