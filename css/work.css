@@ -14,15 +14,15 @@
   justify-content: space-between;
 }
 
-.workWrap {
+.workWrap .contentWrap {
   position: relative;
 }
-.workWrap section {
+.workWrap .contentWrap section {
   box-sizing: border-box;
   border: 1rem solid #FFFFFF;
 }
 @media (max-width: 480px) {
-  .workWrap section {
+  .workWrap .contentWrap section {
     border: none;
   }
 }

@@ -7,7 +7,6 @@
 <title>Jessica Wu</title>
 	
 <link rel="stylesheet" href="/css/work.css">
-<link rel="stylesheet" href="/css/animate.css">
 <style>
 </style>
 </head>
@@ -16,7 +15,7 @@
 	<div class="workWrap">	
 		<section class="section-info">
 			<figure>
-			<figcaption class="title animated wow fadeInLeft" data-wow-duration="1.0s" data-wow-delay=".4s">
+			<figcaption class="title">
 				<h2 class="f-40">
 					likestore website
 				</h2>
@@ -29,17 +28,20 @@
 					Likestore is a e-commerce platform, that empowered anyone to create their own online store with no coding skills needed.
 				</p>
 			</figcaption>
-			<img class="animated wow fadeInRight" data-wow-duration="1.0s" data-wow-delay=".2s" src="/images/likestore011.jpg">
+			<img src="/images/likestore011.jpg">
 			</figure>
 		</section>
+		<div class="contentWrap">
+		<section class="navigation"></section>
 		<section class="section-desc">
-			<figure class="animated wow fadeInRight" data-wow-duration="1.0s" data-wow-delay=".2s">
+			<figure>
 				<img src="/images/likestore013.jpg" alt="">
 			</figure>
-			<figure class="animated wow fadeInLeft" data-wow-duration="1.0s" data-wow-delay=".4s">
+			<figure>
 				<img src="/images/likestore012.gif" alt="">
 			</figure>
 		</section>
+		</div>
 	</div>
     <section class="footer"></section>
 
@@ -49,6 +51,7 @@
 <script>
 $(function(){ 
 	$(".footer").load("/footer.html"); 
+	$(".navigation").load("/navigation.html"); 
 }); 
 </script>
 

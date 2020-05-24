@@ -4,12 +4,14 @@
 @import "variable";
 @import "extend";
 .workWrap {
-	position: relative;
-	section {
-		box-sizing: border-box;
-		border: 1rem solid $white;
-		@media (max-width: 480px) {
-			border: none;
+	.contentWrap {
+		position: relative;
+		section {
+			box-sizing: border-box;
+			border: 1rem solid $white;
+			@media (max-width: 480px) {
+				border: none;
+			}
 		}
 	}
 }
