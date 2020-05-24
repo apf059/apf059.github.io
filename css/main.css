@@ -14,7 +14,7 @@
   justify-content: space-between;
 }
 
-.profile .modal .modal-body .career .period .location:before, .profile figure figcaption p.quote:before, .cover:before {
+.profile .modal .modal-body .career .period .location:before, .cover:before {
   content: "";
   display: block;
   position: absolute;
@@ -98,36 +98,6 @@
   padding-left: 15px;
   margin-left: 7px;
   border-left: thin solid rgba(0, 0, 0, 0.6);
-  display: inline-block;
-}
-.profile figure figcaption p.quote {
-  font-family: Oleo Script;
-  margin: 4rem 0 4.5rem;
-  position: relative;
-  padding-left: 42px;
-  color: rgba(0, 0, 0, 0.23);
-}
-@media (max-width: 480px) {
-  .profile figure figcaption p.quote {
-    margin: 15px 0;
-    padding-left: 25px;
-  }
-}
-.profile figure figcaption p.quote:before {
-  width: 28px;
-  height: 28px;
-  background: url(../images/icons/left_quote.svg) top no-repeat;
-  top: -5px;
-  filter: grayscale(1) opacity(0.5);
-}
-@media (max-width: 480px) {
-  .profile figure figcaption p.quote:before {
-    width: 16px;
-    height: 16px;
-    top: -3px;
-  }
-}
-.profile figure figcaption p.quote span {
   display: inline-block;
 }
 .profile figure figcaption .btnGroup {

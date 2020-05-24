@@ -75,35 +75,6 @@
 					display: inline-block;
 				}
 			}
-			p {
-				&.quote {
-					font-family: Oleo Script;
-					margin: 4rem 0 4.5rem;
-					position: relative;
-					padding-left: 42px;
-					color: $light-gray;
-					@media (max-width: 480px) {
-						margin: 15px 0;
-						padding-left: 25px;
-					}
-					&:before {
-						@extend %pseudo-element;
-						width: 28px;
-						height: 28px;
-						background: url(../images/icons/left_quote.svg) top no-repeat;
-						top: -5px;
-						filter: grayscale(1) opacity(0.5);
-						@media (max-width: 480px) {
-							width: 16px;
-							height: 16px;
-							top: -3px;
-						}
-					}
-					span {
-						display: inline-block;
-					}
-				}
-			}
 			.btnGroup {
 				@extend %d-flex-between;
 				border-top: thin solid $light-gray;
