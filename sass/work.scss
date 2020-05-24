@@ -47,11 +47,18 @@
 }
 .section-desc {
 	margin: 0 0 1.5rem;
-	display: flex;
+	@extend %d-flex-between;
 	flex-wrap: wrap;
 	@media (min-width: 769px) {
 		figure {
 			width: 50%;
+		}
+	}
+	&.space {
+		@media (min-width: 769px) {
+			figure {
+				width: 49.5%;
+			}
 		}
 	}
 }

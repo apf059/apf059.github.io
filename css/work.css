@@ -2,7 +2,7 @@
 @import "component.css";
 /* CSS Document */
 /* CSS Document */
-.section-info figure {
+.section-desc, .section-info figure {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -54,12 +54,16 @@
 
 .section-desc {
   margin: 0 0 1.5rem;
-  display: flex;
   flex-wrap: wrap;
 }
 @media (min-width: 769px) {
   .section-desc figure {
     width: 50%;
+  }
+}
+@media (min-width: 769px) {
+  .section-desc.space figure {
+    width: 49.5%;
   }
 }
 
