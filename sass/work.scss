@@ -40,11 +40,5 @@
 	@extend %d-flex-center;
 	figure {
 		width: 50%;
-		text-align: center;
-		p.quote {
-			width:50%;
-			margin: 2rem auto;
-			text-align: left;
-		}
 	}
 }
