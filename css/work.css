@@ -71,12 +71,23 @@
   background: #F0F0F0;
   padding: 3rem 0;
 }
+@media (max-width: 768px) {
+  .section-demo {
+    padding: 1rem 0;
+  }
+}
 .section-demo figure {
   padding-top: 5px;
   width: 75%;
-  margin: 0 auto;
+  margin: 0 auto 3rem;
   background: #FFFFFF;
   border-radius: 8px;
+}
+@media (max-width: 768px) {
+  .section-demo figure {
+    width: 90%;
+    margin-bottom: 1rem;
+  }
 }
 
 /*# sourceMappingURL=work.css.map */
