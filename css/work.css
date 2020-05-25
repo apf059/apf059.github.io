@@ -66,6 +66,12 @@
     width: 49.5%;
   }
 }
+.section-desc.copyright {
+  align-items: baseline;
+}
+.section-desc.copyright a {
+  color: #000000;
+}
 
 .section-demo {
   background: #F0F0F0;
@@ -77,17 +83,19 @@
   }
 }
 .section-demo figure {
-  padding-top: 5px;
   width: 75%;
   margin: 0 auto 3rem;
   background: #FFFFFF;
-  border-radius: 8px;
 }
 @media (max-width: 768px) {
   .section-demo figure {
     width: 90%;
     margin-bottom: 1rem;
   }
+}
+.section-demo figure.border-radius {
+  padding-top: 5px;
+  border-radius: 8px;
 }
 
 /*# sourceMappingURL=work.css.map */

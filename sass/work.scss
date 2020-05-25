@@ -61,6 +61,12 @@
 			}
 		}
 	}
+	&.copyright {
+		align-items: baseline;
+		a {
+			color: $black;
+		}
+	}
 }
 .section-demo {
 	background: #F0F0F0;
@@ -69,14 +75,16 @@
 		padding: 1rem 0;
 	}
 	figure {
-		padding-top: 5px;
 		width: 75%;
 		margin: 0 auto 3rem;
 		background: $white;
-		border-radius: 8px;
 		@media (max-width: 768px) {
 			width: 90%;
 			margin-bottom: 1rem;
+		}
+		&.border-radius {
+			padding-top: 5px;
+			border-radius: 8px;
 		}
 	}
 }
