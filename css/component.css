@@ -151,13 +151,14 @@
   }
 }
 .my-footer > div {
+  flex-wrap: wrap;
   align-items: baseline;
   width: 90%;
   margin: 0 auto;
 }
 @media (min-width: 769px) {
   .my-footer > div {
-    width: 60%;
+    width: 70%;
     align-items: flex-end;
   }
 }

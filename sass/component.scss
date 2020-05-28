@@ -143,11 +143,12 @@
 	}
 	>div {
 		@extend %d-flex-between;
+		flex-wrap: wrap;
 		align-items: baseline;
 		width: 90%;
 		margin: 0 auto;
 		@media (min-width: 769px) {
-			width: 60%;
+			width: 70%;
 			align-items: flex-end;
 		}
 		@media (max-width: 768px) {
