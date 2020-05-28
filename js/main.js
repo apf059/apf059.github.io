@@ -109,3 +109,8 @@ $(window).ready(function(){
 //     $(this).parent().toggleClass('menu-mobile-hidden');
 //   })
 // })
+
+$(function(){ 
+  $(".footer").load("/footer.html"); 
+  $(".navigation").load("/navigation.html"); 
+}); 
