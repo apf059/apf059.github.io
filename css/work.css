@@ -22,6 +22,14 @@
   max-width: 1600px;
   margin: 0 auto;
 }
+.workWrap.book h1 {
+  font-family: Noto Serif TC;
+}
+@media (max-width: 768px) {
+  .workWrap.book figure {
+    flex-direction: column-reverse;
+  }
+}
 
 @media (min-width: 1250px) {
   .section-info {

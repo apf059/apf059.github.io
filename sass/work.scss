@@ -16,6 +16,16 @@
 		max-width: 1600px;
 		margin: 0 auto;
 	}
+	&.book {
+		h1 {
+			font-family: Noto Serif TC;
+		}
+		figure {
+			@media (max-width: 768px) {
+				flex-direction: column-reverse;
+			}
+		}
+	}
 }
 
 .section-info {
