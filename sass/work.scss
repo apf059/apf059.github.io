@@ -70,6 +70,18 @@
 				width: 49.5%;
 			}
 		}
+		&.narrow-left {
+			@media (min-width: 769px) {
+				figure {
+					&:first-child {
+						width: 38.2%
+					}
+					&:last-child {
+						width: 60.6%
+					}
+				}
+			}
+		}
 	}
 	&.copyright {
 		align-items: baseline;

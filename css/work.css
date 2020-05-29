@@ -74,6 +74,14 @@
     width: 49.5%;
   }
 }
+@media (min-width: 769px) {
+  .section-desc.space.narrow-left figure:first-child {
+    width: 38.2%;
+  }
+  .section-desc.space.narrow-left figure:last-child {
+    width: 60.6%;
+  }
+}
 .section-desc.copyright {
   align-items: baseline;
 }
