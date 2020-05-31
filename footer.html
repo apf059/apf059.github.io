@@ -1,20 +1,117 @@
+<style>
+.my-footer {
+  background: #7C98A3;
+  border: 1rem solid #FFFFFF;
+  box-sizing: border-box;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 2.5rem 1rem 3.5rem;
+  margin-top: 1rem;
+}
+@media (max-width: 480px) {
+  .my-footer {
+    border: none;
+    padding: 1rem 1rem 2rem;
+  }
+}
+.my-footer > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: baseline;
+  width: 90%;
+  margin: 0 auto;
+}
+.my-footer > div a {
+	color: #FFFFFF;
+}
+@media (min-width: 769px) {
+  .my-footer > div {
+    width: 70%;
+    align-items: flex-end;
+  }
+}
+@media (max-width: 768px) {
+  .my-footer > div {
+    flex-direction: column-reverse;
+  }
+}
+.my-footer > div .left-col ul {
+  margin: 0 0 2rem;
+  list-style: none;
+  padding-left: 0;
+}
+.my-footer > div .left-col ul li {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0.8rem 0;
+}
+@media (min-width: 769px) {
+  .my-footer > div .left-col ul li {
+    display: inline-block;
+    margin-right: 1rem;
+    padding-right: 1rem;
+    border-right: thin solid #FFFFFF;
+  }
+  .my-footer > div .left-col ul li:last-child {
+    border: none;
+  }
+}
+@media (min-width: 769px) {
+  .my-footer > div .left-col .contact {
+    margin-top: 2.5rem;
+  }
+}
+.my-footer > div .left-col .contact div {
+  margin: 0.6rem 0;
+}
+.my-footer > div .left-col .contact div img {
+  width: 16px;
+  margin-right: 6px;
+  filter: invert(1) opacity(0.8);
+}
+.my-footer > div .left-col .contact div p {
+  display: inline-block;
+}
+.my-footer > div .left-col .contact div:last-child img {
+  vertical-align: baseline;
+}
+.my-footer > div .left-col .copyright {
+  margin-top: 1rem;
+}
+@media (max-width: 768px) {
+  .my-footer > div .right-col {
+    margin-bottom: 1.6rem;
+    padding-bottom: 0.5rem;
+    border-bottom: thin solid rgba(255, 255, 255, 0.5);
+  }
+}
+.my-footer > div .right-col p {
+  margin-top: 0.8rem;
+  padding-top: 0.3rem;
+  border-top: thin solid rgba(255, 255, 255, 0.5);
+}
+.my-footer > div .right-col p span {
+  display: inline-block;
+}
+</style>
 <footer class="my-footer">
 	<div>
 		<div class="left-col">
 			<ul class="f-17">
-				<li>About</li>
-				<li>Projects</li>
-				<li>Books</li>
-				<li>Marketing</li>
+				<li><a href="/index.html#contentWrap">About</a></li>
+				<li><a href="/index.html#projects">Projects</a></li>
+				<li><a href="/index.html#books">Books</a></li>
+				<li><a href="/index.html#marketing">Marketing</a></li>
 			</ul>
 			<div class="contact f-14">
 				<div>
 					<img src="/images/icons/envelopes.svg">
-					<p>apf059@hotmail.com</p>
+					<p><a href="mailto:apf059@hotmail.com">apf059@hotmail.com</a></p>
 				</div>
 				<div>
 					<img src="/images/icons/linkedin.svg">
-					<p>linkedin</p>
+					<p><a href="https://tw.linkedin.com/in/jessica-wu-b6964214b" target="_blank">linkedin</a></p>
 				</div>
 			</div>
 			<p class="f-14 copyright">Copyright © 2020 by Jessica Wu</p>
