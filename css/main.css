@@ -2,13 +2,13 @@
 @import "component.css";
 /* CSS Document */
 /* CSS Document */
-.projects .imgBox .imgMask, .books .imgBox .imgMask, .profile figure, .cover {
+.marketing .banners .imgBox .block, .projects .imgBox .imgMask, .books .imgBox .imgMask, .marketing .imgBox .imgMask, .profile figure, .cover {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.books .bookMix, .projects .projectMix, .projects .likestore .imgGroup, .profile figure figcaption .btnGroup {
+.marketing .banners, .books .bookMix, .projects .projectMix, .projects .likestore .imgGroup, .profile figure figcaption .btnGroup {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -274,34 +274,41 @@
   }
 }
 
-.projects h2, .books h2 {
+.projects, .books, .marketing {
+  padding: 20px 0 45px;
+  text-align: center;
+}
+.projects.bg-gray, .books.bg-gray, .marketing.bg-gray {
+  background-color: #F6F6F6;
+}
+.projects h2, .books h2, .marketing h2 {
   margin-bottom: 1rem;
 }
-.projects > div, .books > div {
+.projects > div, .books > div, .marketing > div {
   width: 78%;
   margin: 0 auto;
 }
-.projects .info, .books .info {
+.projects .info, .books .info, .marketing .info {
   margin: 1.2rem 0 1.5rem;
   border-top: thin solid rgba(0, 0, 0, 0.23);
   border-bottom: thin solid rgba(0, 0, 0, 0.23);
 }
-.projects .info h3, .books .info h3 {
+.projects .info h3, .books .info h3, .marketing .info h3 {
   line-height: 2.125rem;
 }
-.projects .info h3 span, .books .info h3 span {
+.projects .info h3 span, .books .info h3 span, .marketing .info h3 span {
   font-weight: 400;
   font-family: Muli;
 }
 @media (max-width: 768px) {
-  .projects .info h3 span, .books .info h3 span {
+  .projects .info h3 span, .books .info h3 span, .marketing .info h3 span {
     display: block;
   }
 }
-.projects .imgBox, .books .imgBox {
+.projects .imgBox, .books .imgBox, .marketing .imgBox {
   position: relative;
 }
-.projects .imgBox .imgMask, .books .imgBox .imgMask {
+.projects .imgBox .imgMask, .books .imgBox .imgMask, .marketing .imgBox .imgMask {
   background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
   opacity: 0;
@@ -312,22 +319,19 @@
   color: #FFFFFF;
   transition: all 0.4s ease-out;
 }
-.projects .imgBox .imgMask:hover, .books .imgBox .imgMask:hover {
+.projects .imgBox .imgMask:hover, .books .imgBox .imgMask:hover, .marketing .imgBox .imgMask:hover {
   opacity: 1;
   cursor: pointer;
 }
-.projects .imgBox .imgMask .txtBox .title, .books .imgBox .imgMask .txtBox .title {
+.projects .imgBox .imgMask .txtBox .title, .books .imgBox .imgMask .txtBox .title, .marketing .imgBox .imgMask .txtBox .title {
   font-family: Playfair Display;
   margin-bottom: 0.4rem;
   letter-spacing: 1px;
 }
 
 .projects {
-  padding: 20px 0 45px;
-  text-align: center;
   box-sizing: border-box;
   border: 1rem solid #FFFFFF;
-  background-color: #F6F6F6;
 }
 @media (max-width: 480px) {
   .projects {
@@ -374,10 +378,6 @@
   }
 }
 
-.books {
-  padding: 20px 0 45px;
-  text-align: center;
-}
 @media (max-width: 768px) {
   .books h2 {
     margin-bottom: 0;
@@ -425,6 +425,41 @@
   cursor: pointer;
   transform: scale(1.08);
   transition: all 1s ease-out;
+}
+
+@media (min-width: 769px) {
+  .marketing h2 {
+    margin-bottom: 2.5rem;
+  }
+}
+.marketing .banners {
+  flex-wrap: wrap;
+}
+.marketing .banners .imgBox {
+  width: 23.6%;
+  margin-top: 1.5rem;
+}
+@media (max-width: 768px) {
+  .marketing .banners .imgBox {
+    width: 48.5%;
+    margin-top: 0.7rem;
+  }
+}
+.marketing .banners .imgBox .dummy {
+  padding-top: 100%;
+}
+.marketing .banners .imgBox .block {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+}
+.marketing .banners .imgBox .block img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=main.css.map */

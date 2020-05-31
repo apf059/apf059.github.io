@@ -245,7 +245,12 @@
 	}	
 }
 
-.projects, .books {
+.projects, .books, .marketing {
+	padding: 20px 0 45px;
+	text-align: center;
+	&.bg-gray {
+		background-color: #F6F6F6;
+	}
 	h2 {
 		margin-bottom: 1rem;
 	}
@@ -297,11 +302,8 @@
 }
 
 .projects {
-	padding: 20px 0 45px;
-	text-align: center;
 	box-sizing: border-box;
 	border: 1rem solid $white;	
-	background-color: #F6F6F6;
 	@media (max-width: 480px) {
 		border: none;
 	}
@@ -345,8 +347,6 @@
 }
 
 .books {
-	padding: 20px 0 45px;
-	text-align: center;
 	@media (max-width: 768px) {
 		h2 {
 			margin-bottom: 0;
@@ -388,6 +388,43 @@
 					cursor: pointer;
 					transform: scale(1.08);
 					transition: all 1s ease-out;
+				}
+			}
+		}
+	}
+}
+
+.marketing {
+	h2 {
+		@media (min-width: 769px) {
+			margin-bottom: 2.5rem;
+		}
+	}
+	.banners {
+		@extend %d-flex-between;
+		flex-wrap: wrap;
+		.imgBox {
+			width: 23.6%;
+			margin-top: 1.5rem;
+			@media (max-width: 768px) {
+				width: 48.5%;
+				margin-top: 0.7rem;
+			}
+			.dummy {
+				padding-top: 100%;
+			}
+			.block {
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				@extend %d-flex-center;
+				overflow: hidden;
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
 				}
 			}
 		}
