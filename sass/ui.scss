@@ -71,6 +71,16 @@ img {
 						0 1px 5px 0 $gray;
 		}
 	}
+	&.btn-outline {
+		padding: 0.5rem 1rem;
+		color: $black;
+		background-color: transparent;
+		border: thin solid rgba($black, 0.8);
+		&:hover {
+			background-color: rgba($black, 0.15);
+			transition: all 1s ease-out;
+		}
+	}
 }
 
 /*BEGIN font-size*/

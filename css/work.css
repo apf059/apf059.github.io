@@ -136,4 +136,11 @@
   border-radius: 8px;
 }
 
+.buttons {
+  text-align: center;
+}
+.buttons button {
+  margin: 1.5rem 1rem;
+}
+
 /*# sourceMappingURL=work.css.map */
