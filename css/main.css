@@ -28,15 +28,22 @@
   position: relative;
 }
 
-.cover {
-  position: relative;
-  height: 100vh;
+.sectionBorder {
   box-sizing: border-box;
   border: 1rem solid #FFFFFF;
 }
 @media (max-width: 480px) {
-  .cover {
+  .sectionBorder {
     border: none;
+  }
+}
+
+.cover {
+  position: relative;
+  height: 100vh;
+}
+@media (max-width: 480px) {
+  .cover {
     padding: 0 1rem;
   }
 }
@@ -329,15 +336,6 @@
   letter-spacing: 1px;
 }
 
-.projects {
-  box-sizing: border-box;
-  border: 1rem solid #FFFFFF;
-}
-@media (max-width: 480px) {
-  .projects {
-    border: none;
-  }
-}
 .projects .likestore .imgGroup {
   flex-wrap: wrap;
 }

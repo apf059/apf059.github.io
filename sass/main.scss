@@ -6,14 +6,18 @@
 .contentWrap {
 	position: relative;
 }
-.cover {
-	@extend %d-flex-center;
-	position: relative;
-	height: 100vh;
+.sectionBorder {
 	box-sizing: border-box;
 	border: 1rem solid $white;
 	@media (max-width: 480px) {
 		border: none;
+	}
+}
+.cover {
+	@extend %d-flex-center;
+	position: relative;
+	height: 100vh;
+	@media (max-width: 480px) {
 		padding: 0 1rem;
 	}
 
@@ -302,11 +306,6 @@
 }
 
 .projects {
-	box-sizing: border-box;
-	border: 1rem solid $white;	
-	@media (max-width: 480px) {
-		border: none;
-	}
 	.likestore {
 		.imgGroup {
 			@extend %d-flex-between;
