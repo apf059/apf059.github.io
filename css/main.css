@@ -2,6 +2,7 @@
 @import "component.css";
 /* CSS Document */
 /* CSS Document */
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script&family=Muli:wght@400;800&family=Noto+Serif+TC:wght@700&family=Playfair+Display:ital,wght@0,700;1,700&family=Noto+Sans+TC:wght@700&display=swap");
 .marketing .banners .imgBox .block, .projects .imgBox .imgMask, .books .imgBox .imgMask, .marketing .imgBox .imgMask, .profile figure, .cover {
   display: flex;
   align-items: center;
