@@ -6,33 +6,6 @@ $(document).ready(function(){
           scrollTop:$('#contentWrap').offset().top
         }, 700);
       });
-      $('#btn-about').click(function(){ 
-        $('html,body').animate({
-          scrollTop:$('#about').offset().top
-        }, 700);
-      });
-      $('#btn-projects').click(function(){ 
-        $('html,body').animate({
-          scrollTop:$('#projects').offset().top
-        }, 700);
-      });
-      $('#btn-books').click(function(){ 
-        $('html,body').animate({
-          scrollTop:$('#books').offset().top
-        }, 700);
-      });
-      $('#btn-marketing').click(function(){ 
-        $('html,body').animate({
-          scrollTop:$('#marketing').offset().top
-        }, 700);
-      });
-      // $('a[href*=#]:not([href=#])').click(function(){
-        // var target = $(this.hash);
-        // $('html,body').stop().animate({
-          // scrollTop:target.offset().top
-        // }, 400);
-        // return false;
-      // })
     }); 
 }); 
 
@@ -54,39 +27,6 @@ $(document).click(function(event){
 	}
 });
 
-// sticky Nav
-$(document).ready(function() {
-  var stickyTop = $('.stickyNav').offset().top;
-
-  $(window).scroll(function() {
-    var windowTop = $(window).scrollTop();
-    if (stickyTop < windowTop) {
-      $('.stickyNav').css('position', 'fixed');
-    } else {
-      $('.stickyNav').css('position', 'absolute');
-    }
-  });
-});
-
-
-// open mobile menu
-$(document).ready(function(){
-  $('.open-menu').click(function(){
-    $('.menu-mobile-hidden').slideToggle();
-  });
-});
-
-
-$(window).ready(function(){
-  var pageWidth = $(window).width();
-  if(pageWidth < 1150) {
-    $('.menu-mobile-hidden li').click(function(){
-      $('.menu-mobile-hidden').slideToggle('100');
-    });
-  }
-});
-
-
 // index nav spy
 $(window).scroll(function() {
     var currentTop = $(window).scrollTop();
@@ -96,8 +36,8 @@ $(window).scroll(function() {
       var elemBottom 	= elemTop + $(this).height();
       if(currentTop >= elemTop-100 && currentTop <= elemBottom){
         var id 		= $(this).attr('id');
-        var navElem = $('li[id="btn-' + id+ '"]');
-    navElem.addClass('active').siblings().removeClass( 'active' );
+        var navElem = $('a[href="/index.html#' + id+ '"]');
+    navElem.parent().addClass('active').siblings().removeClass( 'active' );
       }
     })
 });

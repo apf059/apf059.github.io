@@ -128,3 +128,58 @@
 		}
 	}
 }
+
+// navigation
+.stickyNav {
+	right: 0;
+	top: 0;
+	z-index: 2;
+	font-size: 14px;
+	letter-spacing: 0.8px;
+	text-align: right;
+	transition: all 1s ease-out;
+	background: rgba($white, 0.85);
+	width: 100%;
+	height: 45px;
+	button {
+		&.open-menu {
+			margin: 5px 16px;
+		}
+	}
+	ul {
+		list-style: none;
+		padding-left: 0;
+		margin: 0;
+		background-color: $white;
+		box-shadow: 0 1px 5px 0 $gray;
+		&.menu-mobile-hidden {
+			display: none;
+		}
+		li {
+			padding: 2px 8px 3px;
+			position: relative;
+			text-align: center;
+			&:hover {
+				cursor: pointer;
+				background: $gray;
+				a {
+					color: $white;
+				}
+			}
+			&.active {
+				background: $black;
+				a {
+					color: $white;
+				}
+			}
+			a {
+				color: $black;
+				display: block;
+				padding: 1rem 0;
+				&:active {
+					background: transparent;
+				}
+			}
+		}
+	}
+}

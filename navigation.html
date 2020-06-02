@@ -1,60 +1,28 @@
-<style>
-.stickyNav {
-	right: 0;
-	top: 0;
-	z-index: 2;
-	font-size: 14px;
-	letter-spacing: 0.8px;
-	text-transform: uppercase;
-	transition: all 1s ease-out;
-	background: rgba(255,255,255, 0.85);
-	width: 100%;
-	text-align: right;
-	height: 45px;
-}
-.stickyNav button.open-menu {
-	margin: 5px 16px;
-}
-.stickyNav ul {
-	list-style: none;
-	padding-left: 0;
-	margin: 0;
-	background-color: #FFFFFF;
-	box-shadow: 0 1px 5px 0 rgba(0,0,0, 0.6);
-}
-.stickyNav ul.menu-mobile-hidden {
-	display: none;
-}
-.stickyNav ul li {
-	padding: 2px 8px 3px 8px;
-	position: relative;
-	text-align: center;
-}
-.stickyNav ul li:hover {
-	cursor: pointer;
-	background: #000000;
-}
-.stickyNav ul li:hover a {
-	color: #FFFFFF;
-}
-.stickyNav ul li a {
-	color: #000000;
-	display: block;
-	padding: 1rem 0;
-}
-</style>
 <nav class="stickyNav">
 	<button class="open-menu btn icon icon-sm icon-border-none">
 		<img src="/images/icons/open_menu.svg" alt="">
 	</button>
 	<ul class="menu-mobile-hidden">
-		<li><a href="/index.html#contentWrap">about</a></li>
-		<li><a href="/index.html#projects">projects</a></li>
-		<li><a href="/index.html#books">books</a></li>
-		<li><a href="/index.html#marketing">marketing</a></li>
+		<li><a href="/index.html#about">ABOUT</a></li>
+		<li><a href="/index.html#projects">PROJECTS</a></li>
+		<li><a href="/index.html#books">BOOKS</a></li>
+		<li><a href="/index.html#marketing">MARKETING</a></li>
 	</ul>
 </nav>
 <script>
+// index nav btn scroll
+// id: myNav
+$(document).ready(function(){
+    $(function(){ 
+      $('#myNav a[href*=#]:not([href=#])').click(function(){
+        var target = $(this.hash);
+        $('html,body').stop().animate({
+          scrollTop:target.offset().top
+        }, 400);
+        return false;
+      })
+    }); 
+}); 
 // sticky Nav
 $(document).ready(function() {
   var stickyTop = $('.stickyNav').offset().top;
@@ -73,8 +41,14 @@ $(document).ready(function(){
   $('.open-menu').click(function(){
     $('.menu-mobile-hidden').slideToggle();
   });
-  $('.menu-mobile-hidden li').click(function(){
-    $('.menu-mobile-hidden').slideToggle('100');
-  });
+});
+// click link close menu
+$(window).ready(function(){
+  var pageWidth = $(window).width();
+  if(pageWidth < 1150) {
+    $('.menu-mobile-hidden li a').click(function(){
+      $('.menu-mobile-hidden').slideToggle('100');
+    });
+  }
 });
 </script>

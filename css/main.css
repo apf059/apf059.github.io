@@ -72,75 +72,38 @@
   width: 12px;
 }
 
-.stickyNav {
-  right: 0;
-  top: 0;
-  padding: 0 0 0 12px;
-  z-index: 2;
-  font-size: 14px;
-  letter-spacing: 0.8px;
-  text-transform: uppercase;
-  transition: all 1s ease-out;
-}
 @media (min-width: 1150px) {
   .stickyNav {
+    padding: 0 0 0 12px;
     top: 16px;
+    background: transparent;
     border-left: thin solid rgba(0, 0, 0, 0.23);
+    height: auto;
+    width: auto;
   }
-}
-@media (max-width: 1149px) {
-  .stickyNav {
-    background: rgba(255, 255, 255, 0.85);
-    width: 100%;
-    text-align: right;
-    height: 45px;
-  }
-}
-@media (min-width: 1150px) {
   .stickyNav button.open-menu {
     display: none;
   }
-}
-@media (max-width: 1149px) {
-  .stickyNav button.open-menu {
-    margin: 5px 16px;
-  }
-}
-.stickyNav ul {
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
-}
-@media (max-width: 1149px) {
   .stickyNav ul {
-    background-color: #FFFFFF;
-    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.6);
+    background: transparent;
+    box-shadow: none;
   }
   .stickyNav ul.menu-mobile-hidden {
-    display: none;
+    display: block;
   }
-}
-.stickyNav ul li {
-  padding: 2px 8px 3px 8px;
-  position: relative;
-}
-@media (min-width: 1150px) {
   .stickyNav ul li {
+    text-align: left;
     margin: 12px 0;
   }
-}
-@media (max-width: 1149px) {
-  .stickyNav ul li {
-    text-align: center;
-    padding: 1rem 0;
+  .stickyNav ul li:not(.active):hover {
+    background: transparent;
   }
-}
-.stickyNav ul li:hover {
-  cursor: pointer;
-}
-.stickyNav ul li.active {
-  background: #000000;
-  color: #FFFFFF;
+  .stickyNav ul li:not(.active):hover a {
+    color: inherit;
+  }
+  .stickyNav ul li a {
+    padding: 0;
+  }
 }
 
 .profile {
