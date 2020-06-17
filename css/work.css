@@ -105,12 +105,6 @@
     padding-top: 62.9%;
   }
 }
-.section-desc.copyright {
-  align-items: baseline;
-}
-.section-desc.copyright a {
-  color: #000000;
-}
 
 .section-demo {
   background: #F0F0F0;
@@ -124,7 +118,6 @@
 .section-demo figure {
   width: 75%;
   margin: 0 auto 3rem;
-  background: #FFFFFF;
 }
 @media (max-width: 768px) {
   .section-demo figure {
@@ -135,6 +128,14 @@
 .section-demo figure.border-radius {
   padding-top: 5px;
   border-radius: 8px;
+  background: #FFFFFF;
+}
+
+.copyright {
+  align-items: baseline;
+}
+.copyright a {
+  color: #000000;
 }
 
 .buttons {
