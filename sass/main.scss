@@ -328,7 +328,7 @@
 		}
 	}
 	.info {
-		border-top: none;
+		border: none;
 		h3 {
 			font-family: Noto Sans TC;
 		}
@@ -355,14 +355,39 @@
 			@media (max-width: 1250px) {
 				margin-top: 1.5rem;
 			}
-		}
-		.imgBox {
-			overflow: hidden;
-			img {
-				&:hover {
-					cursor: pointer;
-					transform: scale(1.08);
-					transition: all 1s ease-out;
+			.imgBox {
+				overflow: hidden;
+				img {
+					transition: all 0.5s ease-out;
+					
+				}
+			}
+			&:hover {
+				.imgBox {
+					img {
+						cursor: pointer;
+						transform: scale(1.08);
+					}
+				}
+				.info {
+					h3 {
+						&:after {
+							width: 100%;
+						}
+					}
+				}
+			}
+			.info {
+				h3 {
+					&:after {
+						bottom: 0;
+						content: "";
+						display: block;
+						height: 1px;
+						background: $light-gray;
+						transition: width 1s ease 0s, left 1s ease 0s;
+						width: 0;
+					}
 				}
 			}
 		}

@@ -346,7 +346,7 @@
   }
 }
 .books .info {
-  border-top: none;
+  border: none;
 }
 .books .info h3 {
   font-family: Noto Sans TC;
@@ -380,13 +380,27 @@
     margin-top: 1.5rem;
   }
 }
-.books .bookMix .imgBox {
+.books .bookMix > div .imgBox {
   overflow: hidden;
 }
-.books .bookMix .imgBox img:hover {
+.books .bookMix > div .imgBox img {
+  transition: all 0.5s ease-out;
+}
+.books .bookMix > div:hover .imgBox img {
   cursor: pointer;
   transform: scale(1.08);
-  transition: all 1s ease-out;
+}
+.books .bookMix > div:hover .info h3:after {
+  width: 100%;
+}
+.books .bookMix > div .info h3:after {
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.23);
+  transition: width 1s ease 0s, left 1s ease 0s;
+  width: 0;
 }
 
 @media (min-width: 769px) {
