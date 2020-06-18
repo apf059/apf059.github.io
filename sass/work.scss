@@ -18,12 +18,14 @@
 		margin: 0 auto;
 	}
 	&.book {
-		h1 {
-			font-family: Noto Serif TC;
-		}
-		figure {
-			@media (max-width: 768px) {
-				flex-direction: column-reverse;
+		.section-info {
+			h1 {
+				font-family: Noto Serif TC;
+			}
+			figure {
+				@media (max-width: 768px) {
+					flex-direction: column-reverse;
+				}
 			}
 		}
 	}
@@ -69,6 +71,11 @@
 		@media (min-width: 769px) {
 			figure {
 				width: 49.5%;
+			}
+		}
+		&.desktop-reverse {
+			@media (min-width: 769px) {
+				flex-direction: row-reverse;
 			}
 		}
 		&.narrow-left {
