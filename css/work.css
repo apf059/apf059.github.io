@@ -81,7 +81,7 @@
   }
 }
 @media (min-width: 769px) {
-  .section-desc.space.narrow-left figure .block {
+  .section-desc.space.narrow-left figure .block picture {
     position: absolute;
     top: 0;
     right: 0;
@@ -92,7 +92,7 @@
     justify-content: center;
     overflow: hidden;
   }
-  .section-desc.space.narrow-left figure .block img {
+  .section-desc.space.narrow-left figure .block picture img {
     width: 100%;
     height: 100%;
     object-fit: cover;
