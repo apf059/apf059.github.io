@@ -135,6 +135,9 @@
   border-radius: 8px;
   background: #FFFFFF;
 }
+.section-demo figure.bg-transparent {
+  padding-top: 1.5rem;
+}
 
 .copyright {
   align-items: baseline;

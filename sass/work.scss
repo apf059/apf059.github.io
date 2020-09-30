@@ -134,6 +134,9 @@
 			border-radius: 8px;
 			background: $white;
 		}
+		&.bg-transparent {
+			padding-top: 1.5rem;
+		}
 	}
 }
 .copyright {
