@@ -110,6 +110,12 @@
     padding-top: 62.9%;
   }
 }
+@media (min-width: 769px) {
+  .section-desc.flow-demo figure {
+    width: 75%;
+    margin: 0 auto;
+  }
+}
 
 .section-demo {
   background: #F0F0F0;

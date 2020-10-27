@@ -115,6 +115,14 @@
 			}
 		}
 	}
+	&.flow-demo {
+		@media (min-width: 769px) {
+			figure {
+				width: 75%;
+				margin: 0 auto;
+			}
+		}
+	}
 }
 .section-demo {
 	background: #F0F0F0;
