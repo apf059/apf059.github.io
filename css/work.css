@@ -56,6 +56,10 @@
     margin: 0 70px;
   }
 }
+.section-info figure figcaption .dev-team {
+  margin-top: 1rem;
+  line-height: 1.7rem;
+}
 .section-info .info {
   margin: 0 0 1.5rem;
   border-top: thin solid rgba(0, 0, 0, 0.23);
