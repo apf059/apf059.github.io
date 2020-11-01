@@ -148,6 +148,16 @@
 .section-demo figure.bg-transparent {
   padding-top: 1.5rem;
 }
+.section-demo h3 {
+  width: 75%;
+  margin: 1rem auto 1.5rem;
+}
+@media (max-width: 768px) {
+  .section-demo h3 {
+    width: 90%;
+    margin-top: 2rem;
+  }
+}
 
 .copyright {
   align-items: baseline;
