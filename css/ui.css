@@ -94,6 +94,14 @@ img {
   transition: all 1s ease-out;
 }
 
+.txt-center {
+  text-align: center;
+}
+
+.pt-2 {
+  padding-top: 2rem;
+}
+
 /*BEGIN font-size*/
 h1 {
   font-size: 4.3rem;

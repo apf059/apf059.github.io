@@ -120,6 +120,11 @@
     margin: 0 auto;
   }
 }
+@media (min-width: 769px) {
+  .section-desc.flow-demo.small figure {
+    width: 56%;
+  }
+}
 
 .section-demo {
   background: #F0F0F0;

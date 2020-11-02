@@ -126,6 +126,13 @@
 				margin: 0 auto;
 			}
 		}
+		&.small {
+			@media (min-width: 769px) {
+				figure {
+					width: 56%;
+				}
+			}
+		}
 	}
 }
 .section-demo {
