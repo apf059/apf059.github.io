@@ -20,7 +20,7 @@
 }
 .workWrap .contentWrap {
   position: relative;
-  max-width: 1600px;
+  max-width: 1590px;
   margin: 0 auto;
 }
 .workWrap.book .section-info h1 {
@@ -145,6 +145,11 @@
     margin-bottom: 1rem;
   }
 }
+@media (min-width: 1581px) {
+  .section-demo figure {
+    width: 1200px;
+  }
+}
 .section-demo figure.border-radius {
   padding-top: 5px;
   border-radius: 8px;
@@ -161,6 +166,11 @@
   .section-demo h3 {
     width: 90%;
     margin-top: 2rem;
+  }
+}
+@media (min-width: 1581px) {
+  .section-demo h3 {
+    width: 1200px;
   }
 }
 

@@ -14,7 +14,7 @@
 	}
 	.contentWrap {
 		position: relative;
-		max-width: 1600px;
+		max-width: 1590px;
 		margin: 0 auto;
 	}
 	&.book {
@@ -148,6 +148,9 @@
 			width: 90%;
 			margin-bottom: 1rem;
 		}
+		@media (min-width: 1581px) {
+			width: 1200px;
+		}
 		&.border-radius {
 			padding-top: 5px;
 			border-radius: 8px;
@@ -163,6 +166,9 @@
 		@media (max-width: 768px) {
 			width: 90%;
 			margin-top: 2rem;
+		}
+		@media (min-width: 1581px) {
+			width: 1200px;
 		}
 	}
 }
