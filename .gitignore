@@ -1,6 +1,4 @@
-extend.css
 extend.css.map
-variable.css
 variable.css.map
 ui.css.map
 main.css.map
@@ -8,3 +6,4 @@ component.css.map
 work.css.map
 image-large/
 keep/
+.DS_Store
