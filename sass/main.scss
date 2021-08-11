@@ -282,6 +282,13 @@
 }
 
 .projects {
+	.ophi {
+		.imgBox {
+			@media (min-width: 1250px) {
+				width: 100%;
+			}
+		}
+	}
 	.likestore {
 		.imgGroup {
 			@extend %d-flex-between;

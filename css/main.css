@@ -300,6 +300,11 @@
   letter-spacing: 1px;
 }
 
+@media (min-width: 1250px) {
+  .projects .ophi .imgBox {
+    width: 100%;
+  }
+}
 .projects .likestore .imgGroup {
   flex-wrap: wrap;
 }
