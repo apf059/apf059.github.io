@@ -9,7 +9,7 @@
   justify-content: center;
 }
 
-.marketing .banners, .books .bookMix, .projects .projectMix, .projects .likestore .imgGroup, .profile figure figcaption .btnGroup {
+.marketing .banners, .books .bookMix, .projects .projectMix, .projects .likestore .imgGroup, .profile .modal .modal-body .career .description .jobTitle, .profile figure figcaption .btnGroup {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -146,22 +146,25 @@
 }
 .profile .modal .modal-body .label {
   color: rgba(0, 0, 0, 0.6);
+  padding-top: 1rem;
 }
 .profile .modal .modal-body .career {
   display: flex;
-  margin: 1.5rem 2rem;
+  margin: 1.5rem 0;
 }
 .profile .modal .modal-body .career .period {
-  width: 34%;
+  width: 28%;
   padding-right: 5%;
+  color: rgba(0, 0, 0, 0.6);
 }
 .profile .modal .modal-body .career .period .company {
   font-family: Playfair Display;
+  color: #000000;
+  margin-bottom: 0.5rem;
 }
 .profile .modal .modal-body .career .period .location {
   font-size: 0.812rem;
   position: relative;
-  color: rgba(0, 0, 0, 0.6);
   margin-top: 0.4rem;
   padding-left: 1.1rem;
 }
@@ -177,7 +180,11 @@
 }
 .profile .modal .modal-body .career .description .jobTitle {
   color: rgba(0, 0, 0, 0.8);
-  padding-bottom: 0.4rem;
+  padding-bottom: 0.7rem;
+}
+.profile .modal .modal-body .career .description .jobTitle .skill img {
+  height: 20px;
+  margin: 0 0.05rem;
 }
 @media (max-width: 680px) {
   .profile .modal .modal-body .career {
@@ -208,7 +215,6 @@
 @media (min-width: 480px) {
   .profile .modal .modal-body .list ul {
     column-count: 3;
-    padding-left: 3rem;
     margin: 0.5rem 0 1.5rem;
   }
 }
@@ -217,15 +223,14 @@
 }
 @media (min-width: 681px) {
   .profile .modal .modal-body {
-    background-color: #F5F5F5;
+    background-color: #ededed;
   }
   .profile .modal .modal-body .career {
     align-items: stretch;
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.6) 15px, #FFFFFF 0) top left;
-    padding: 1rem;
+    background: white;
+    padding: 1.3rem;
     min-height: 85px;
-    border-radius: 4px;
-    box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 14px;
   }
   .profile .modal .modal-body .career .period {
     display: flex;

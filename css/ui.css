@@ -68,6 +68,11 @@ img {
 .btn.icon.icon-border-none img {
   width: 20px;
 }
+.btn.icon.icon-border-none img.link {
+  width: 18px;
+  filter: opacity(0.6);
+  top: -3px;
+}
 .btn.icon img {
   width: 15px;
   position: relative;
