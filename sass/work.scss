@@ -33,6 +33,7 @@
 .section-info {
 	@media (min-width: 1250px) {
 		height: 100vh;
+		align-content: center;
 	}
 	figure {
 		@extend %d-flex-between;

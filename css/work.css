@@ -34,6 +34,7 @@
 @media (min-width: 1250px) {
   .section-info {
     height: 100vh;
+    align-content: center;
   }
 }
 @media (max-width: 768px) {
