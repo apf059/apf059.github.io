@@ -14,8 +14,7 @@
 	}
 	.contentWrap {
 		position: relative;
-		max-width: 1590px;
-		margin: 0 auto;
+		text-align: center;
 	}
 	&.book {
 		.section-info {
@@ -63,12 +62,16 @@
 	}
 }
 .section-desc {
-	margin: 0 0 1.5rem;
+	max-width: 1590px;
+	margin: 0 auto 1.5rem;
 	@extend %d-flex-between;
 	flex-wrap: wrap;
 	@media (min-width: 769px) {
 		figure {
 			width: 50%;
+			&.fadeInRight {
+				text-align: right;
+			}
 		}
 	}
 	&.space {

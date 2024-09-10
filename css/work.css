@@ -20,8 +20,7 @@
 }
 .workWrap .contentWrap {
   position: relative;
-  max-width: 1590px;
-  margin: 0 auto;
+  text-align: center;
 }
 .workWrap.book .section-info h1 {
   font-family: Noto Serif TC;
@@ -66,12 +65,16 @@
 }
 
 .section-desc {
-  margin: 0 0 1.5rem;
+  max-width: 1590px;
+  margin: 0 auto 1.5rem;
   flex-wrap: wrap;
 }
 @media (min-width: 769px) {
   .section-desc figure {
     width: 50%;
+  }
+  .section-desc figure.fadeInRight {
+    text-align: right;
   }
 }
 @media (min-width: 769px) {
