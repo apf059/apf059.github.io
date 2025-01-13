@@ -40,7 +40,7 @@
 		@media (max-width: 768px) {
 			flex-direction: column;
 		}
-		img {
+		> img {
 			@media (min-width: 769px) {
 				width: 65%;
 			}
@@ -60,6 +60,16 @@
 	.info {
 		margin: 0 0 1.5rem;
 		border-top: thin solid $light-gray;
+		@extend %d-flex-between;
+		@media (max-width: 768px) {
+			display: block;
+		}
+		.skill {
+			img {
+				height: 20px;
+				margin: 0 0.05rem;
+			}
+		}
 	}
 }
 .section-desc {

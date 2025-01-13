@@ -3,7 +3,7 @@
 @import "fonts-work.css";
 /* CSS Document */
 /* CSS Document */
-.section-desc, .section-info figure {
+.section-desc, .section-info .info, .section-info figure {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -43,7 +43,7 @@
   }
 }
 @media (min-width: 769px) {
-  .section-info figure img {
+  .section-info figure > img {
     width: 65%;
   }
 }
@@ -63,6 +63,15 @@
 .section-info .info {
   margin: 0 0 1.5rem;
   border-top: thin solid rgba(0, 0, 0, 0.23);
+}
+@media (max-width: 768px) {
+  .section-info .info {
+    display: block;
+  }
+}
+.section-info .info .skill img {
+  height: 20px;
+  margin: 0 0.05rem;
 }
 
 .section-desc {
