@@ -25,10 +25,14 @@
 .workWrap.book .section-info h1 {
   font-family: Noto Serif TC;
 }
-@media (max-width: 768px) {
+@media (max-width: 1009px) {
   .workWrap.book .section-info figure {
     flex-direction: column-reverse;
   }
+}
+.workWrap.book .section-info figure figcaption {
+  width: -webkit-fill-available;
+  width: calc(100% - 54px);
 }
 
 @media (min-width: 1250px) {
@@ -37,12 +41,12 @@
     align-content: center;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 1009px) {
   .section-info figure {
     flex-direction: column;
   }
 }
-@media (min-width: 769px) {
+@media (min-width: 1010px) {
   .section-info figure > img {
     width: 65%;
   }
@@ -50,7 +54,7 @@
 .section-info figure figcaption {
   margin: 0 27px 1rem;
 }
-@media (min-width: 769px) {
+@media (min-width: 1010px) {
   .section-info figure figcaption {
     width: 32%;
     margin: 0 70px;
@@ -63,11 +67,7 @@
 .section-info .info {
   margin: 0 0 1.5rem;
   border-top: thin solid rgba(0, 0, 0, 0.23);
-}
-@media (max-width: 768px) {
-  .section-info .info {
-    display: block;
-  }
+  flex-wrap: wrap;
 }
 .section-info .info .skill img {
   height: 20px;
@@ -132,10 +132,18 @@
     width: 75%;
     margin: 0 auto;
   }
+  .section-desc.flow-demo figure figcaption {
+    margin-bottom: 4rem;
+  }
 }
 @media (min-width: 769px) {
   .section-desc.flow-demo.small figure {
     width: 56%;
+  }
+}
+@media (max-width: 768px) {
+  .section-desc.flow-demo figure figcaption {
+    margin: 1rem 1rem 4rem;
   }
 }
 
