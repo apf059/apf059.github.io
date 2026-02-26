@@ -31,7 +31,7 @@
 
 .sectionBorder {
   box-sizing: border-box;
-  border: 1rem solid #FFFFFF;
+  border: 0.5rem solid #FFFFFF;
 }
 @media (max-width: 480px) {
   .sectionBorder {
@@ -54,6 +54,7 @@
   background-size: cover;
   background-attachment: fixed;
   opacity: 0.26;
+  border-radius: 2rem;
 }
 .cover .coverContent {
   z-index: 1;
@@ -94,10 +95,12 @@
   }
   .stickyNav ul li {
     text-align: left;
-    margin: 12px 0;
+    margin: 0.5rem 0;
+    padding: 0.5rem 1.2rem 0.5rem;
+    border-radius: 1rem 0 0 1rem;
   }
   .stickyNav ul li:not(.active):hover {
-    background: transparent;
+    background: #ededed;
   }
   .stickyNav ul li:not(.active):hover a {
     color: inherit;
@@ -112,6 +115,9 @@
 }
 .profile figure {
   flex-wrap: wrap;
+}
+.profile figure > img {
+  border-radius: 2rem;
 }
 @media (min-width: 500px) and (max-width: 950px) {
   .profile figure img {
@@ -141,8 +147,8 @@
   display: inline-block;
 }
 .profile figure figcaption .btnGroup {
-  border-top: thin solid rgba(0, 0, 0, 0.23);
-  padding-top: 1rem;
+  padding-top: 1.8rem;
+  background: url(../images/icons/divider.svg) top no-repeat;
 }
 .profile .modal .modal-body .label {
   color: rgba(0, 0, 0, 0.6);
@@ -257,17 +263,12 @@
 .projects.bg-gray, .books.bg-gray, .marketing.bg-gray {
   background-color: #F6F6F6;
 }
-.projects h2, .books h2, .marketing h2 {
-  margin-bottom: 1rem;
-}
 .projects > div, .books > div, .marketing > div {
   width: 78%;
   margin: 0 auto;
 }
 .projects .info, .books .info, .marketing .info {
-  margin: 1.2rem 0 1.5rem;
-  border-top: thin solid rgba(0, 0, 0, 0.23);
-  border-bottom: thin solid rgba(0, 0, 0, 0.23);
+  margin: 1.5rem 0;
 }
 .projects .info h3, .books .info h3, .marketing .info h3 {
   line-height: 2.125rem;
@@ -294,6 +295,7 @@
   height: 100%;
   color: #FFFFFF;
   transition: all 0.4s ease-out;
+  border-radius: 2rem;
 }
 .projects .imgBox .imgMask:hover, .books .imgBox .imgMask:hover, .marketing .imgBox .imgMask:hover {
   opacity: 1;
@@ -348,6 +350,9 @@
   .projects .projectMix .funoo .imgBox {
     margin-bottom: 0.8rem;
   }
+}
+.projects img {
+  border-radius: 2rem;
 }
 
 @media (max-width: 768px) {
@@ -422,8 +427,11 @@
   flex-wrap: wrap;
 }
 .marketing .banners .imgBox {
-  width: 23.6%;
+  width: 24%;
   margin-top: 1.5rem;
+}
+.marketing .banners .imgBox img {
+  border-radius: 2rem;
 }
 @media (max-width: 768px) {
   .marketing .banners .imgBox {

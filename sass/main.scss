@@ -9,7 +9,7 @@
 }
 .sectionBorder {
 	box-sizing: border-box;
-	border: 1rem solid $white;
+	border: 0.5rem solid $white;
 	@media (max-width: 480px) {
 		border: none;
 	}
@@ -29,6 +29,7 @@
 		background-size: cover;
 		background-attachment: fixed;
 		opacity: 0.26;
+		border-radius: 2rem;
 	}
 	.coverContent {
 		z-index: 1;
@@ -71,9 +72,11 @@
 			}
 			li {
 				text-align: left;
-				margin: 12px 0;
+				margin: 0.5rem 0;
+				padding: 0.5rem 1.2rem 0.5rem;
+				border-radius: 1rem 0 0 1rem;
 				&:not(.active):hover {
-					background: transparent;
+					background: #ededed;
 					a {
 						color: inherit;
 					}
@@ -91,6 +94,9 @@
 	figure {
 		@extend %d-flex-center;
 		flex-wrap: wrap;
+		>img {
+			border-radius: 2rem;
+		}
 		@media (min-width: 500px) and (max-width: 950px) {
 			img {
 				width: 50%;
@@ -117,8 +123,8 @@
 			}
 			.btnGroup {
 				@extend %d-flex-between;
-				border-top: thin solid $light-gray;
-				padding-top: 1rem;
+				padding-top: 1.8rem;
+				background: url(../images/icons/divider.svg) top no-repeat;
 			}
 		}
 	}
@@ -237,17 +243,12 @@
 	&.bg-gray {
 		background-color: #F6F6F6;
 	}
-	h2 {
-		margin-bottom: 1rem;
-	}
 	>div {
 		width: 78%; 
 		margin: 0 auto;
 	}
 	.info {
-		margin: 1.2rem 0 1.5rem;
-		border-top: thin solid $light-gray;
-		border-bottom: thin solid $light-gray;
+		margin: 1.5rem 0;
 		h3 {
 			line-height: 2.125rem;
 			span {
@@ -272,6 +273,7 @@
 			height: 100%;
 			color: $white;
 			transition: all 0.4s ease-out;
+			border-radius: 2rem;
 			&:hover {
 				opacity: 1;
 				cursor: pointer;
@@ -331,6 +333,9 @@
 				}
 			}
 		}
+	}
+	img {
+		border-radius: 2rem;
 	}
 }
 
@@ -417,8 +422,11 @@
 		@extend %d-flex-between;
 		flex-wrap: wrap;
 		.imgBox {
-			width: 23.6%;
+			width: 24%;
 			margin-top: 1.5rem;
+			img {
+				border-radius: 2rem;
+			}
 			@media (max-width: 768px) {
 				width: 48.5%;
 				margin-top: 0.7rem;
