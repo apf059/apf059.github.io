@@ -1,12 +1,13 @@
 
 <footer class="my-footer">
+  <hr class="mb-2">  
 	<div>
 		<div class="left-col">
 			<ul class="f-17">
-				<li><a href="/index.html#contentWrap">About</a></li>
-				<li><a href="/index.html#projects">Projects</a></li>
+				<li><b><a href="/index.html#contentWrap">About</a></b></li>
+				<li><b><a href="/index.html#projects">Projects</a></b></li>
 				<!-- <li><a href="/index.html#books">Books</a></li> -->
-				<li><a href="/index.html#marketing">Marketing</a></li>
+				<li><b><a href="/index.html#marketing">Marketing</a></b></li>
 			</ul>
 			<div class="contact f-14">
 				<div>
@@ -23,29 +24,32 @@
 		<div class="right-col f-13">
 			<p class="photo">
 				The photographer and the photographed: <br />
-				<span><b>Andy Cheng</b></span> ／
-				<span><b>Babara Hsieh</b></span>
+				<span>Andy Cheng</span> ／
+				<span>Babara Hsieh</span>
 			</p>
 			<p class="psd">
 				Mockup material credits: <br />
-				<span><b><a href="https://www.freepik.com/author/lcd2020" target="_blank">lcd2020</a></b></span> ／ 
-				<span><b><a href="https://unsplash.com/@yasuhiroyokota" target="_blank">Yasuhiro Yokota</a></b></span> ／
-				<span><b><a href="https://unsplash.com/@domenicoloia" target="_blank">Domenico Loia</a></b></span> ／ 
-				<span><b><a href="https://www.freepik.com/author/rawpixel-com" target="_blank">rawpixel.com</a></b></span> ／
-				<span><b><a href="https://www.freepik.com/author/8photo" target="_blank">8photo</a></b></span>
+				<span><a href="https://www.freepik.com/author/lcd2020" target="_blank">lcd2020</a></span> ／ 
+				<span><a href="https://unsplash.com/@yasuhiroyokota" target="_blank">Yasuhiro Yokota</a></span> ／
+				<span><a href="https://unsplash.com/@domenicoloia" target="_blank">Domenico Loia</a></span> ／ 
+				<span><a href="https://www.freepik.com/author/rawpixel-com" target="_blank">rawpixel.com</a></span> ／
+				<span><a href="https://www.freepik.com/author/8photo" target="_blank">8photo</a></span>
 			</p>
 		</div>
 	</div>
 </footer>
 <style>
   .my-footer {
-    background: #7C98A3;
     border: 0.5rem solid #FFFFFF;
     border-radius: 2rem;
     box-sizing: border-box;
-    color: rgba(255, 255, 255, 0.8);
     padding: 2.5rem 1rem 3.5rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
+  }
+  .my-footer > hr {
+    border: 0;
+    height: 0.5rem;
+    background: url(/images/icons/divider.svg) top no-repeat;
   }
   @media (max-width: 480px) {
     .my-footer {
@@ -63,7 +67,7 @@
     margin: 0 auto;
   }
   .my-footer > div a {
-    color: #FFFFFF;
+    color: rgba(0, 0, 0, 0.8);
   }
   @media (min-width: 769px) {
     .my-footer > div {
@@ -91,7 +95,7 @@
       display: inline-block;
       margin-right: 1rem;
       padding-right: 1rem;
-      border-right: thin solid #FFFFFF;
+      border-right: thin solid #333333;
     }
     .my-footer > div .left-col ul li:last-child {
       border: none;
@@ -108,7 +112,7 @@
   .my-footer > div .left-col .contact div img {
     width: 16px;
     margin-right: 6px;
-    filter: invert(1) opacity(0.8);
+    filter: opacity(0.7);
   }
   .my-footer > div .left-col .contact div p {
     display: inline-block;
