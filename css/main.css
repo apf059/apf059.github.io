@@ -150,6 +150,9 @@
   padding-top: 1.8rem;
   background: url(../images/icons/divider.svg) top no-repeat;
 }
+.profile .modal {
+  border-radius: 1rem;
+}
 .profile .modal .modal-body .label {
   color: rgba(0, 0, 0, 0.6);
   padding-top: 1rem;
