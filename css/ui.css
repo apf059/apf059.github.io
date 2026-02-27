@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* CSS Document */
 /* CSS Document */
-.quote:before {
+.quote:before, .btn.btn-outline.large .previous:before, .btn.btn-outline.large .next:before {
   content: "";
   display: block;
   position: absolute;
@@ -98,6 +98,43 @@ img {
 .btn.btn-outline:hover {
   background-color: rgba(0, 0, 0, 0.15);
   transition: all 1s ease-out;
+}
+.btn.btn-outline.large {
+  height: 5rem;
+  width: 14rem;
+  letter-spacing: 1px;
+  text-align: left;
+  line-height: 1.8rem;
+  font-weight: bold;
+}
+.btn.btn-outline.large .previous, .btn.btn-outline.large .next {
+  display: block;
+  position: relative;
+  padding-left: 1.5rem;
+  font-weight: normal;
+}
+.btn.btn-outline.large .previous:before, .btn.btn-outline.large .next:before {
+  width: 1rem;
+  height: 1rem;
+  background: url(/images/icons/arrow_up.svg) top no-repeat;
+  top: 7px;
+}
+.btn.btn-outline.large .previous:before {
+  transform: rotate(-135deg);
+}
+.btn.btn-outline.large .next:before {
+  transform: rotate(45deg);
+}
+@media (max-width: 680px) {
+  .btn.btn-outline.large {
+    display: block;
+    width: stretch;
+    height: auto;
+    padding: 1rem 1.5rem;
+  }
+  .btn.btn-outline.large span {
+    margin-top: 0.5rem;
+  }
 }
 
 .txt-center {

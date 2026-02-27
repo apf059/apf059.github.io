@@ -85,6 +85,46 @@ img {
 			background-color: rgba($black, 0.15);
 			transition: all 1s ease-out;
 		}
+		&.large {
+			height: 5rem;
+			width: 14rem;
+			letter-spacing: 1px;
+			text-align: left;
+			line-height: 1.8rem;
+			font-weight: bold;
+			.previous, .next {
+				display: block;
+				position: relative;
+				padding-left: 1.5rem;
+				font-weight: normal;
+				&:before {
+					@extend %pseudo-element;
+					width: 1rem;
+					height: 1rem;
+					background: url(/images/icons/arrow_up.svg) top no-repeat;
+					top: 7px;
+				}
+			}
+			.previous {
+				&:before {
+					transform: rotate(-135deg);
+				}
+			}
+			.next {
+				&:before {
+					transform: rotate(45deg);
+				}
+			}
+			@media (max-width:680px) {
+				display: block;
+				width: stretch;
+				height: auto;
+				padding: 1rem 1.5rem;
+				span {
+					margin-top: 0.5rem;
+				}
+			}
+		}
 	}
 }
 
