@@ -135,6 +135,9 @@
   .section-desc.flow-demo figure figcaption {
     margin-bottom: 4rem;
   }
+  .section-desc.flow-demo figure.ophiDesign {
+    width: 50% !important;
+  }
 }
 @media (min-width: 769px) {
   .section-desc.flow-demo.small figure {
